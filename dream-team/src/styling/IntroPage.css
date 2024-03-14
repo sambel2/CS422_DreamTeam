@@ -70,3 +70,9 @@ p.user-agreement {
         font-size: 14px;
     }
 }
+
+/* for the logo image at intro */
+.intro-page img {
+    max-width: 200px; 
+    margin-bottom: 20px;
+  }

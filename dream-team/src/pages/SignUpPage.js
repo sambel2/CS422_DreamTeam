@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import '../styling/SignUpPage.css';
 import { createAccount } from '../services/AuthService';
-import userAgreement from '../Misc/user-agreement.txt';
-
 
 const SignUpPage = () => {  
     const navigate = useNavigate();
@@ -67,6 +65,12 @@ const SignUpPage = () => {
         }
     };
 
+
+    // navigate back
+    const handleGoBack = () => {
+        navigate(-1); 
+    };
+
     return (
         <div className="sign-up-page">
             <h1>Create Account</h1>
@@ -107,8 +111,11 @@ const SignUpPage = () => {
                 </label>
 
                 <button type="submit">Create Account</button>
-                {error && <div style={{ color: 'red', marginTop: '10px' }}>{error}</div>}
+                {error && <div style={{ color: 'red'}}>{error}</div>}
             </form>
+            <button onClick={handleGoBack} style={{  background: 'none', border: 'none', color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>
+                Go Back
+            </button>
         </div>
     );
 };

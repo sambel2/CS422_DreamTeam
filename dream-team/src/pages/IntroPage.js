@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate  } from 'react-router-dom'; // install react-router-dom if you don't have it. ask sergio for help.
 import '../styling/IntroPage.css';
 import { login } from '../services/AuthService'; 
+import logoImage from '../images/dreamteam.png'; 
 
 
 const IntroPage = () => {
@@ -34,7 +35,7 @@ const handleSubmit = (e) => {
 
 return (
     <div className="intro-page">
-        <h1>Dream Team</h1>
+        <img src={logoImage} alt="Dream Team Logo" style={{ maxWidth: '400px', marginBottom: '20px' }} />
         
         <form onSubmit={handleSubmit}>
             <input
