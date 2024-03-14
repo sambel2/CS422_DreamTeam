@@ -7,3 +7,5 @@ https://www.sample.net/business/contracts/agreement/user-agreement/#sample_user_
 Dream Team logo implemented for www.canva.com
 https://www.canva.com/     
 
+Icon images fetched from https://www.rawpixel.com/
+

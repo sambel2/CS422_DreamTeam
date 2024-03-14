@@ -27,12 +27,12 @@ input[type="password"],
 button,
 label {
     width: 100%; 
-    padding: 10px; /* ppadding inside the input fields and button */
-    margin-bottom: 10px; /* space below each input */
+    padding: 10px; 
+    margin-bottom: 10px; 
 }
 
 button {
-    background-color: #007bff; /* bootstrap primary color for example */
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px; /* rounded corners */

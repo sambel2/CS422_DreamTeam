@@ -1,0 +1,126 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* space between icons */
+.right-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.home-header a {
+    background: #e7e7e7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.home-header img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* center logo */
+.logo {
+
+    height: 120px;
+    margin: 0 auto; 
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.achievement-section {
+    width: 80%;
+    max-width: 500px;
+    margin: 2rem auto; /* center horizontally and add margin */
+    padding: 1rem;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.achievement-section img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+
+.achievement-section button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    padding: 10px 0;
+}
+
+ /* style for buttons */
+ .bottom-nav a {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s; /* transition for hovver effect */
+    display: flex; /* flexbox for centering */
+    justify-content: center; 
+    align-items: center; 
+}
+
+.bottom-nav a:hover {
+    background-color: #3e8e41; /* darker shade on hover */
+}
+
+/* more width for smaller screens */
+@media (max-width: 768px) {
+    .achievement-section button {
+        width: 90%; 
+    }
+/* let the buttons fill the space */
+    .bottom-nav a {
+        flex-grow: 1; 
+        margin: 0.1;
+        border-radius: 0;
+        border-radius: 10px;
+    }
+}
