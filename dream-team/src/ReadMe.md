@@ -3,3 +3,7 @@ Use the following resource for routing through the webpage for creating dynamic 
 
 User Agreement template document provided from sample.net
 https://www.sample.net/business/contracts/agreement/user-agreement/#sample_user_agreements
+
+Dream Team logo implemented for www.canva.com
+https://www.canva.com/     
+

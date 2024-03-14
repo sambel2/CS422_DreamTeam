@@ -11,23 +11,23 @@ import UserAgreement from './components/UserAgreement';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import ForgotPasswordPage from './components/ForgotPasswordPage';
 
-// // used to create a dummy account only
-// const initializeDummyAccount = () => {
-//   const users = JSON.parse(localStorage.getItem('users') || '[]');
-//   const dummyUser = { username: 'user', password: 'password' };
+// used to create a dummy account only
+const initializeDummyAccount = () => {
+  const users = JSON.parse(localStorage.getItem('users') || '[]');
+  const dummyUser = { username: 'user', password: 'password' };
 
-//   // check if the dummy user already exists to avoid duplicates
-//   if (!users.some(user => user.username === dummyUser.username)) {
-//     users.push(dummyUser);
-//     localStorage.setItem('users', JSON.stringify(users));
-//   }
-// };
+  // check if the dummy user already exists to avoid duplicates
+  if (!users.some(user => user.username === dummyUser.username)) {
+    users.push(dummyUser);
+    localStorage.setItem('users', JSON.stringify(users));
+  }
+};
 
 function App() {
   // useEffect to initialize the dummy account
-  // useEffect(() => {
-  //   initializeDummyAccount();
-  // }, []);
+  useEffect(() => {
+    initializeDummyAccount();
+  }, []);
 
   return (
     <Router>
