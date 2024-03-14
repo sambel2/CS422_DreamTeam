@@ -67,9 +67,9 @@ return (
             <Link to="/create-account">Create Account</Link>
             <Link to="/forgot-password">Forgot Password?</Link>
         </div>
-        <p className="user-agreement">User Agreement and Privacy End User</p>
+        <p className="user-agreement"> <Link to="/user-agreement" style={{color: 'blue'}}>User Agreement</Link> and <Link to="/privacy-policy" style={{color: 'blue'}}>Privacy End User</Link></p>
     </div>
 );
 };
-
+<Link to="/privacy-policy" style={{color: 'blue'}}>Privacy End User</Link>
 export default IntroPage;

@@ -5,17 +5,14 @@ const getUsers = () => JSON.parse(localStorage.getItem('users') || '[]');
 // save users back to localStorage
 const saveUsers = (users) => localStorage.setItem('users', JSON.stringify(users));
 
-export const createAccount = (newUserData) => {
-    const users = getUsers();
-    const userExists = users.some(u => u.username === newUserData.username);
-    
-    if (!userExists) {
-        users.push(newUserData); 
-        saveUsers(users); // updated users list
-        return true;
-    } else {
-        return false; // user already exists
+export const createAccount = ({ username, password }) => {
+    let users = JSON.parse(localStorage.getItem('users') || '[]');
+    if (users.some(user => user.username === username)) {
+        return false; // Username already exists
     }
+    users.push({ username, password });
+    localStorage.setItem('users', JSON.stringify(users));
+    return true;
 };
 
 export const login = (username, password) => {
