@@ -103,8 +103,6 @@ const SignUpPage = () => {
                     <input name="drives" type="checkbox" checked={formData.drives} onChange={handleInputChange} />
                     Do you commute by driving? (Optional)
                 </label>
-
-                {/* Agreement to terms */}
                 <label>
                     <input name="agreeToTerms" type="checkbox" checked={formData.agreeToTerms} onChange={handleInputChange} required />
                     I agree to the <Link to="/user-agreement" style={{color: 'blue'}}>User Agreement</Link> and <Link to="/privacy-policy" style={{color: 'blue'}}>Privacy Policy</Link>

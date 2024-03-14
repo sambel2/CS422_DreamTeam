@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate, removing Link since it's no longer used
+import { useNavigate } from 'react-router-dom';
 import '../styling/ForgotPasswordPage.css';
 
 const ForgotPasswordPage = () => {
@@ -9,15 +9,15 @@ const ForgotPasswordPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder for actual password reset logic
+    //password reset logic
     console.log('Password reset request for:', userInput);
     setMessage('If the account exists, a password reset link has been sent to your email.');
-    // Optionally reset userInput or navigate to a confirmation page
+    //reset userInput or navigate to a confirmation page
   };
 
-  // Function to navigate back
+  // navigate back
   const handleGoBack = () => {
-    navigate(-1); // Navigates back to the previous page
+    navigate(-1); 
   };
 
   return (
