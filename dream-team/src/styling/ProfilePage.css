@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(145deg, #cae9ff, #f3e7e9, #e3f1d5); /* blended pastel background applied to the entire page */
+    font-family: Arial, sans-serif;
+}
+
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px; 
+}
+.profile-header,
+.profile-info,
+.edit-profile-form {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    background: #ffffffdd; /*semi transparent white for layering effect */
+    padding: 20px;
+    border-radius: 20px; /* soft curved edges for sections */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px; /* larger profile image */
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%; /* rounded edges for the image */
+    background-color: #e7e7e7;
+    overflow: hidden;
+}
+
+.profile-image img {
+    max-width: 200px; 
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.profile-image input[type="file"] {
+    display: none;
+}
+
+.profile-image label {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile-info p,
+.edit-profile-form label {
+    color: #555;
+    line-height: 1.6;
+}
+
+.edit-profile-form input,
+.edit-profile-form select,
+.edit-profile-form button {
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.edit-profile-form button {
+    background-color: #4CAF50; /* soft green color for the button */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* smooth transition for hover effect */
+}
+
+.edit-profile-form button:hover {
+    background-color: #45a049; /* darker green on hover */
+}
+
+/*adjustments for smaller screens */
+@media (max-width: 768px) {
+    .profile-header,
+    .profile-info,
+    .edit-profile-form {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

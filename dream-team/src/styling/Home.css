@@ -87,8 +87,8 @@
 .bottom-nav {
     display: flex;
     justify-content: center;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ccc;
+    background: linear-gradient(145deg, #cae9ff, #e3f1d5);
+    border-top: 1px solid #aca4a4;
     width: 100%;
     padding: 10px 0;
 }
@@ -108,7 +108,7 @@
 }
 
 .bottom-nav a:hover {
-    background-color: #3e8e41; /* darker shade on hover */
+    background-color: #95b4d2; /*shade for hover effect */
 }
 
 /* more width for smaller screens */

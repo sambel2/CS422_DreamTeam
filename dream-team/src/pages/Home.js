@@ -8,12 +8,16 @@ import logoImage from '../images/dreamteam.png';
 
 /* home info, note the achievements is not yet set - prototype*/
 const Home = () => {
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    //we can determine the image source to use if user didn't upload
+    const userImageSrc = currentUser?.profileImage || profileIcon;
+
     return (
         <div className="home-container">
             <header className="home-header">
                 <div></div>
                 <div className="right-icons">
-                    <Link to="/profile"><img src={profileIcon} alt="Profile" /></Link>
+                    <Link to="/profile"><img src={userImageSrc} alt="Profile" style={{ width: '60px', height: '60px', borderRadius: '50%' }}/></Link>
                     <Link to="/settings"><img src={settingsIcon} alt="Settings" /></Link>
                 </div>
             </header>
