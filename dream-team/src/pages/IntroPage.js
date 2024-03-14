@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // npm install react-router-dom in case anyone needs to install it
-import './IntroPage.css'; // styling for pg
+import '../styling/IntroPage.css'; // styling for pg
 
 const IntroPage = () => {
     return (
