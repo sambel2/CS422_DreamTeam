@@ -1,65 +1,75 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // install react-router-dom if you don't have it. Sergio.
+import { Link, useNavigate  } from 'react-router-dom'; // install react-router-dom if you don't have it. ask sergio for help.
 import '../styling/IntroPage.css';
+import { login } from '../services/AuthService'; 
+
 
 const IntroPage = () => {
+    const navigate = useNavigate(); // hook for navigation
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
+    const [loginError, setLoginError] = useState('');
 
-    const handleInputChange = (e) => {
-        const { name, value, checked, type } = e.target;
-        if (type === 'checkbox') {
-            setRememberMe(checked);
-        } else {
-            name === 'username' ? setUsername(value) : setPassword(value);
-        }
-    };
+const handleInputChange = (e) => {
+    const { name, value, checked, type } = e.target;
+    if (type === 'checkbox') {
+        setRememberMe(checked);
+    } else {
+        name === 'username' ? setUsername(value) : setPassword(value);
+    }
+};
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // placeholder for authentication logic
-        console.log('Submitted', { username, password, rememberMe });
-        // typically handle login here, e.g., call a backend service
-    };
+// handle the login for AuthServie to do logic
+const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if (login(username, password, rememberMe)) {
+        console.log('Login successful');
+        navigate('/home');
+    } else {
+        setLoginError('Login failed. Please retry username and password.' );
+    }
+};
 
-    return (
-        <div className="intro-page">
-            <h1>Dream Team</h1>
-            
-            <form onSubmit={handleSubmit}>
+return (
+    <div className="intro-page">
+        <h1>Dream Team</h1>
+        
+        <form onSubmit={handleSubmit}>
+            <input
+                name="username"
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={handleInputChange}
+            />
+            <input
+                name="password"
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={handleInputChange}
+            />
+            <label>
                 <input
-                    name="username"
-                    type="text"
-                    placeholder="Username"
-                    value={username}
+                    name="rememberMe"
+                    type="checkbox"
+                    checked={rememberMe}
                     onChange={handleInputChange}
                 />
-                <input
-                    name="password"
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={handleInputChange}
-                />
-                <label>
-                    <input
-                        name="rememberMe"
-                        type="checkbox"
-                        checked={rememberMe}
-                        onChange={handleInputChange}
-                    />
-                    Remember me
-                </label>
-                <button type="submit">Login</button>
-            </form>
-            <div className="intro-options">
-                <Link to="/create-account">Create Account</Link>
-                <Link to="/forgot-password">Forgot Password?</Link>
-            </div>
-            <p className="user-agreement">User Agreement and Privacy End User</p>
+                Remember me
+            </label>
+            <button type="submit">Login</button>
+            {loginError && <div style={{ color: 'red', marginTop: '10px' }}>{loginError}</div>}
+        </form>
+        <div className="intro-options">
+            <Link to="/create-account">Create Account</Link>
+            <Link to="/forgot-password">Forgot Password?</Link>
         </div>
-    );
+        <p className="user-agreement">User Agreement and Privacy End User</p>
+    </div>
+);
 };
 
 export default IntroPage;
