@@ -1,14 +1,67 @@
 .intro-page {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    height: 100vh; /* the full height of the viewport */
+    text-align: center;
 }
 
 .intro-options a {
     margin: 10px;
     text-decoration: none;
     color: blue; /* customize later for my dream app*/
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px; /* adds space between form elements */
+    margin-bottom: 20px; /* adds space below the form */
+}
+
+
+input[type="text"],
+input[type="password"],
+button,
+label {
+    width: 100%; 
+    padding: 10px; /* ppadding inside the input fields and button */
+    margin-bottom: 10px; /* space below each input */
+}
+
+button {
+    background-color: #007bff; /* bootstrap primary color for example */
+    color: white;
+    border: none;
+    border-radius: 5px; /* rounded corners */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* darker shade on hover on login - looks legit */
+}
+
+/* add some space around the checkbox and label text */
+label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* styling links as buttons, if needed */
+.intro-options a {
+
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* this is so User Agreement text is at the bottom */
+p.user-agreement {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
 }
 
 /* dedia query for smaller devices */
