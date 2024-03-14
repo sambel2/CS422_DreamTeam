@@ -1,0 +1,45 @@
+.tools-container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+.flex-list {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.flex-list, li{
+
+    margin-bottom:20px;
+    border: 1px solid black;
+
+}
+  
+   /* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .flex-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 10px;
+  }  */
