@@ -2,23 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center the container horizontally and vertically */
+    justify-content: center; 
     padding: 20px;
-    height: 100vh; /* Make the container fill the entire viewport height */
+    height: 100vh; 
   }
   
   .box {
-    width: 80%; /* Make the buttons wider */
-    max-width: 600px; /* Adjust the maximum width as needed */
+    width: 80%;
+    max-width: 600px; 
     background-color: #ffffff;
     margin-bottom: 20px;
-    padding: 16px; /* Reduce the padding to reduce the height */
+    padding: 16px; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
   }
   
   h1 {
-    text-align: center; /* Center the title */
+    text-align: center; 
   }
   
