@@ -9,3 +9,6 @@ https://www.canva.com/
 
 Icon images fetched from https://www.rawpixel.com/
 
+Dummy Text from https://www.lipsum.com/
+
+AI Usage: No AI was used in this project.
