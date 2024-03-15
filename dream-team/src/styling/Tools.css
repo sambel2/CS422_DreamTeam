@@ -39,19 +39,17 @@
     text-align: center; 
   }
   .box img.play-button {
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
-    margin: 0 5px; /* Add some margin between the buttons */
+    width: 30px; 
+    height: 30px; 
+    margin: 0 5px; 
   }
   
-  /* Ensure the images don't exceed the box width */
   .box img {
     max-width: 100%;
     height: auto;
     margin: 5px;
   }
   
-  /* Arrange the play buttons in a row */
   .box .play-buttons {
     display: flex;
   }
