@@ -10,6 +10,7 @@ import SignUpPage from './pages/SignUpPage';
 import UserAgreement from './components/UserAgreement';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import ForgotPasswordPage from './components/ForgotPasswordPage';
+import TrackingPage from './pages/TrackingPage';
 
 // used to create a dummy account only
 const initializeDummyAccount = () => {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/user-agreement" element={<UserAgreement />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/tracking" element={<TrackingPage />} />
           {/* all other pages belong to us - place here you nerds*/}
         </Routes>
       </div>
