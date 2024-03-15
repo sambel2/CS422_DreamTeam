@@ -1,20 +1,3 @@
-
-
-.profile-image {
-    width: 150px;
-    background-color: #e7e7e7;
-    overflow: hidden;
-}
-
-.profile-image img {
-    max-width: 200px; 
-    max-height: 200px;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-} 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -22,9 +5,9 @@
     justify-content: center; 
     padding: 20px;
     height: 100vh; 
-  }
-  
-  .box {
+}
+
+.box {
     width: 80%;
     max-width: 600px; 
     background-color: #ffffff;
@@ -33,23 +16,52 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center; 
-  }
-  .box img.play-button {
-    width: 30px; 
-    height: 30px; 
-    margin: 0 5px; 
-  }
-  
-  .box img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
-  }
-  
-  .box .play-buttons {
+}
+
+.home-header {
     display: flex;
-  }
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+}
+
+.right-icons img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px; /* Adjust the size as needed */
+}
+
+.playback-controls {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 20px;
+}
+
+.playback-controls button {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
