@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Link, useNavigate  } from 'react-router-dom'; // install react-router-dom if you don't have it. ask sergio for help.
 import '../styling/IntroPage.css';
 import { login } from '../services/AuthService'; 
-import logoImage from '../images/dreamteam.png'; 
-
+import logoImage from '../images/dreamteam_logo.png'; 
+// import passwordIcon from '../images/Password_Icon.png';
+// import userIcon from '../images/Username_Icon.png';
 
 const IntroPage = () => {
     const navigate = useNavigate(); // hook for navigation
@@ -35,40 +36,42 @@ const handleSubmit = (e) => {
 
 return (
     <div className="intro-page">
-        <img src={logoImage} alt="Dream Team Logo" style={{ maxWidth: '400px', marginBottom: '20px' }} />
+        <img src={logoImage} alt="Dream Team Logo" />
         
         <form onSubmit={handleSubmit}>
-            <input
-                name="username"
-                type="text"
-                placeholder="Username"
-                value={username}
-                onChange={handleInputChange}
-            />
-            <input
-                name="password"
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={handleInputChange}
-            />
-            <label>
+        <input
+            name="username"
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={handleInputChange}
+            className="input-username"
+        />
+        <input
+            name="password"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={handleInputChange}
+            className="input-password"
+        />
+            <label className="checkbox-container">
                 <input
                     name="rememberMe"
                     type="checkbox"
                     checked={rememberMe}
                     onChange={handleInputChange}
                 />
-                Remember me
+                <span className="label-text">Remember me</span>
             </label>
-            <button type="submit">Login</button>
+            <button type="submit" className="login-button">Login</button>
             {loginError && <div style={{ color: 'red', marginTop: '10px' }}>{loginError}</div>}
         </form>
         <div className="intro-options">
-            <Link to="/create-account">Create Account</Link>
-            <Link to="/forgot-password">Forgot Password?</Link>
+        <Link to="/forgot-password">Forgot Password?</Link>
+            <div className="divider"></div>
+            <Link to="/create-account">Create an Account</Link>
         </div>
-        <p className="user-agreement"> <Link to="/user-agreement" style={{color: 'blue'}}>User Agreement</Link> and <Link to="/privacy-policy" style={{color: 'blue'}}>Privacy End User</Link></p>
     </div>
 );
 };

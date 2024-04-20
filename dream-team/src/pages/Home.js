@@ -4,7 +4,7 @@ import '../styling/Home.css';
 import achievementImage from '../images/trophy.png'; 
 import profileIcon from '../images/profile_icon.png';
 import settingsIcon from '../images/settings_icon.png';
-import logoImage from '../images/dreamteam.png'; 
+import logoImage from '../images/dreamteam_logo.png'; 
 
 /* home info, note the achievements is not yet set - prototype*/
 const Home = () => {

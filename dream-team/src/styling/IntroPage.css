@@ -10,69 +10,179 @@
 .intro-options a {
     margin: 10px;
     text-decoration: none;
-    color: blue; /* customize later for my dream app*/
+    color: blue; 
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 300px;
-    gap: 10px; /* adds space between form elements */
-    margin-bottom: 20px; /* adds space below the form */
+    gap: 10px;
+    margin: 0 auto; 
 }
+
 
 
 input[type="text"],
-input[type="password"],
-button,
-label {
-    width: 100%; 
+input[type="password"] {
+    width: 80%;
+    padding: 10px 0px 10px 50px;
+    margin-bottom: 20px;
+    border: 1px solid black; /*border style*/
+    border-radius: 25px; /*border-radius*/
+    outline: none;
+    background-color: transparent;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    transition: border-color 0.3s; /*smooth transition for focus */
+}
+
+
+
+
+.input-username,
+.input-password {
+    position: relative; 
+    padding-left: 60px; /* padding to accommodate icons */
+    background-size: 30px; /* Increase size of the background icon */
+    background-position: 15px center;
+}
+
+
+.input-username {
+    background-image: url('../images/Username_Icon.png');
+
+}
+
+.input-password {
+    background-image: url('../images/Password_Icon.png');
+
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; 
+}
+ 
+
+.login-button {
+    background-image: url('../images/Button.png');
+    background-color: transparent;
+    background-size: cover; /* or try 'contain' if 'cover' stretches the image */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 230px; /* Set a fixed width */
+    height: 48px; /* Set a fixed height */
+
     padding: 10px; 
+    box-shadow: none; /* Reset the box shadow */
     margin-bottom: 10px; 
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px; /* rounded corners */
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3; /* darker shade on hover on login - looks legit */
-}
-
-/* add some space around the checkbox and label text */
-label input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-/* styling links as buttons, if needed */
-.intro-options a {
-
-    padding: 10px 20px;
-    border: 1px solid blue;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-/* this is so User Agreement text is at the bottom */
-p.user-agreement {
-    position: absolute;
-    bottom: 10px;
+ /* Ensures the label takes the full width of its container */
+label {
+    display: flex;
+    justify-content: center; /* horizontally center the contents */
+    align-items: center; 
     width: 100%;
+    margin-bottom: 5px; 
 }
 
-/* dedia query for smaller devices */
+
+
+/* Styling for links at the bottom of the form */
+.intro-options a {
+    color: black; 
+    margin: 5px; /* Removes default margin  */
+    padding: 30px 10px; 
+    font-size: 0.9em;
+}
+
+
+/* this is to separate the forgot password with create account*/
+.divider {
+    height: 2px; 
+    background-color: transparent; /* removed color */
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+/* ahorizontal margin*/
+.divider {
+    margin: 20px auto;
+}
+
+
+
+/* Adjust the form width on smaller screens portrait mode*/
 @media (max-width: 768px) {
-    .intro-options a {
-        font-size: 14px;
+    input[type="text"],
+    input[type="password"] {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 40px; 
+        background-position: 10px center; 
     }
+
+
+    /* Adjust the background position for smaller screens */
+    .input-username,
+    .input-password {
+        background-size: 25px; 
+        background-position: 10px center;
+    }
+
+    /* image size for smaller screens */
+    .intro-page img {
+        max-width: 180px; 
+    }
+
+    /* Center the links */
+    .intro-options a {
+        padding: 20px 10px; 
+    }
+
+    /*Hide the divider for a cleaner look on small screens */
+    .divider {
+        height: 2px; 
+        background-color: transparent;
+        width: 100%;
+        margin: 20px 0; 
+    }
+
+}
+
+ /* adjust for portrait mode in phone view */
+ @media screen and (orientation: landscape) and (max-height: 768px) {
+   
+    .intro-page {
+        margin-top: 10px; /* Reduce the top margin or padding */
+        height: auto; 
+        min-height: 100vh; 
+    }
+
+    /*logo size for landscape orientation */
+    .intro-page img {
+        max-width: 120px;
+        margin-top: 5px; 
+    }
+
 }
 
 /* for the logo image at intro */
 .intro-page img {
-    max-width: 200px; 
-    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto 20px;
   }
