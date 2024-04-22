@@ -18,7 +18,7 @@
 }
 
 .alarm-button {
-    background-image: url('../images/Button.png');
+    background-image: url('../images/button.png');
     background-color: transparent;
     background-size: cover; /* or try 'contain' if 'cover' stretches the image */
     background-repeat: no-repeat;

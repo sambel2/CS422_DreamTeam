@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 50px 0;
+    padding: 0px 0;
     background: linear-gradient(145deg, #cae9ff, #f3e7e9, #e3f1d5);
     border: none;  /* Remove any borders */
     border-top: none;
@@ -44,10 +44,13 @@
 
 @media (max-width: 768px) {
     .bottom-nav {
-        padding: 20px 0;  /* Less padding on mobile */
+        padding: 0px 0;  /* Less padding on mobile */
+        margin-top: 0px; 
+        margin-bottom: 0px; 
     }
 
     .bottom-nav a {
+        
         flex-direction: column; /* Icons above the text */
         padding: 0px;  /* Slightly larger padding for easier touch */
         margin: 0 0px; /* More space between buttons */
@@ -55,7 +58,10 @@
     }
 
     .bottom-nav img {
-        width: 50px;  /* Even smaller icons for very small screens */
+        margin-top: 0px; 
+
+        margin-bottom: 0px; 
+        width: 70px;  /* Even smaller icons for very small screens */
     }
 
     .bottom-nav span {
