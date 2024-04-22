@@ -1,0 +1,56 @@
+.alarm-form {
+    text-align: center;
+    color: #362C61;
+}
+
+.label-left {
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    color: #362C61;
+}
+
+.label-left2 {
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    color: #362C61;
+}
+
+.alarm-button {
+    background-image: url('../images/Button.png');
+    background-color: transparent;
+    background-size: cover; /* or try 'contain' if 'cover' stretches the image */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 230px; /* Set a fixed width */
+    height: 48px; /* Set a fixed height */
+
+    padding: 10px; 
+    box-shadow: none; /* Reset the box shadow */
+    margin-bottom: 10px; 
+}
+
+/* more width for smaller screens */
+@media (max-width: 768px) {
+    .achievement-section button {
+        width: 90%; 
+    }
+/* let the buttons fill the space */
+    .bottom-nav a {
+        flex-grow: 1; 
+        margin: 0.1;
+        border-radius: 0;
+        border-radius: 10px;
+    }
+}
