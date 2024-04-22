@@ -40,8 +40,33 @@
     width: 100%;
 }
 
-.Professional-Help {
+.Title {
+    background-image: url('../images/resources_bg_icon.png');
+    background-color: transparent;
+    background-size: cover; /* or try 'contain' if 'cover' stretches the image */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    /* border-radius: 20px;  */
+    display: flex;
     text-align: left;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.paragraph {
+    text-align: left;
+    color: #362C61;
+
+}
+
+.articles-para {
+    text-align: left;
+    color: #362C61;
+
 }
 
 .adjustable-paragraph {
