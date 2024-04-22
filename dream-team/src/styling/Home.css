@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-
-
-
 .home-header .right-icons a {
     border-radius: 50%;
-    width: 60px; /* Same width as the image for alignment */
-    height: 60px; /* Same height as the image */
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none; /* No underline */
+    text-decoration: none;
     margin-top: 20px; /* move profile icon down or up*/
 }
 
-.home-header img.profile-icon { /* Specific class for the profile icon */
-    width: 100%; /* Ensures the icon uses the full dimensions of the parent <a> tag */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 50%; /* Ensures the image is circular */
+.home-header img.profile-icon { /*for the profile icon*/
+    width: 100%; 
+    height: auto;
+    border-radius: 50%; /*image is circular*/
 }
 
 /* Additional existing styles */
@@ -116,11 +113,11 @@
     }
     
     .home-header {
-        padding: 0 1rem; /* Reduce padding in header but keep horizontal padding for alignment */
+        padding: 0 1rem; /*reduce padding but keep horizontal padding for alignment*/
     }
     
     .right-icons a {
-        margin-top: 15px; /* Greater margin for smaller screens */
+        margin-top: 15px;
     }
 
     .logo {
@@ -148,5 +145,3 @@
     }
   
 }
-
-

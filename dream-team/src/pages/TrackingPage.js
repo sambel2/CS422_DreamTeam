@@ -3,6 +3,9 @@ import AlarmForm from '../components/AlarmForm';
 import Schedule from '../components/Schedule';
 import profileIcon from '../images/profile_icon.png';
 import settingsIcon from '../images/settings_icon.png';
+import toolsIcon from '../images/Tools_Icon.png';
+import trackingIcon from '../images/Tracking_Icon.png';
+import trackingNameIcon from '../images/tracking_name_icon.png';
 import graphImage from '../images/graph.png'; 
 import { Link } from 'react-router-dom';
 import '../styling/TrackingPage.css'; 
@@ -26,9 +29,9 @@ const TrackingPage = () => {
             </header>
 
             <main className="main-content">
-                <h1>Tracking</h1>
+                <h1><img src = {trackingNameIcon} alt = "Tracking"/></h1>
                 <section className="alarm-section">
-                    <AlarmForm addAlarm={addAlarm} />
+                    <AlarmForm addAlarm={addAlarm}/>
                     <Schedule alarms={alarms} />
                 </section>
                 <section className="schedule-section">
@@ -38,6 +41,8 @@ const TrackingPage = () => {
             </main>
 
             <nav className="bottom-nav">
+                {/* <Link to="/tools"><img src={toolsIcon} alt="Tools" /></Link>
+                <Link to="/tracking">Tracking<img src={trackingIcon} alt="Tracking" /></Link> */}
                 <Link to="/tools">Tools</Link>
                 <Link to="/tracking">Tracking</Link>
                 <Link to="/resources">Resources</Link>
