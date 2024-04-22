@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -20,6 +23,7 @@
     gap: 10px; 
 }
 
+
 .home-header a {
     background: #e7e7e7;
     border-radius: 50%;
@@ -31,17 +35,16 @@
     text-decoration: none;
 }
 
-    .home-header img {
-        display: block;
-        max-width: 100%;
-        max-height: 100%;
-    }
+.home-header img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /* center logo */
 .logo {
-
-    height: 120px;
-    margin: 0 auto; 
+    height: 200px;
+    margin: 0 auto 20px;
 }
 
 .main-content {
@@ -60,67 +63,140 @@
     max-width: 500px;
     margin: 2rem auto; /* center horizontally and add margin */
     padding: 1rem;
-    border: 2px dashed #ccc;
     border-radius: 10px;
     text-align: center;
 }
 
-.achievement-section img {
-    width: 200px;
-    height: auto;
-    margin-bottom: 0.5rem;
+.achievement-section p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 35px; 
+    color: rgb(63, 0, 63);
+    margin-bottom: 0.5rem; 
+    text-shadow: 1px 1px 2px gray; 
+    font-weight: 700;
 }
 
+.achievement-section img {
+    display: block;
+    width: 360px;
+    height: auto;
+    margin-bottom: 0.5rem; 
+    margin-left: calc(50% - 180px);  
+}
 
 .achievement-section button {
-    padding: 0.5rem 1rem;
+    padding: 0; 
     font-size: 1rem;
     color: white;
-    background-color: #007bff;
+    background-image: url('../images/button.png');
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
-    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    width: 100%;
-    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    width: 330px; /* Set a fixed width */
+    height: 88px; /* Set a fixed height */
+
+    padding: 10px; 
+    box-shadow: none; /* Reset the box shadow */
+    margin-bottom: 10px; 
+}
+
+.bottom-nav a.tools {
+    background-image: url('../images/tools_Icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.bottom-nav a.tracking {
+    background-image: url('../images/tracking_Icon.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.bottom-nav a.resources {
+    background-image: url('../images/resources_Icon.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+/* Style for nav icons */
+.bottom-nav a {
+    width: 60px; 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #cae9ff, #e3f1d5);
+    border-radius: 30%;  /* Make icons round */
+    text-decoration: none;  
+    box-shadow: none;  
+    border: none; 
+    overflow: hidden; 
 }
 
 .bottom-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; 
+    align-items: center;
+    width: 0%;
+    padding: 10px 0; 
     background: linear-gradient(145deg, #cae9ff, #e3f1d5);
-    border-top: 1px solid #aca4a4;
-    width: 100%;
-    padding: 10px 0;
+    border-top: none; 
 }
 
- /* style for buttons */
- .bottom-nav a {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s; /* transition for hovver effect */
-    display: flex; /* flexbox for centering */
-    justify-content: center; 
-    align-items: center; 
-}
-
-.bottom-nav a:hover {
-    background-color: #95b4d2; /*shade for hover effect */
+.bottom-nav span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 15px; 
+    margin-top: 70px; /* Space between icon and text */
+    flex-direction: column;
+    text-align: center;
 }
 
 /* more width for smaller screens */
-@media (max-width: 768px) {
+@media screen and (orientation: portrait) {
+    .home-container {
+        padding: 10px;  /* padding around the edges */
+    }
+    
+    .logo {
+      /*logo size for smaller screens */
+      height: 150px;
+      margin-top: 80px; 
+
+      margin-bottom: -0px; 
+      
+    }
+    
+    .achievement-section img {
+      /*image size for smaller screens */
+      width: 80%;
+      margin-left: 10%; 
+      margin-top: -70px; 
+     
+    }
+    
     .achievement-section button {
-        width: 90%; 
+      /* Adjust button size for smaller screens */
+      width: 80%;
+      height: auto;
+      padding: 25px;
     }
-/* let the buttons fill the space */
-    .bottom-nav a {
-        flex-grow: 1; 
-        margin: 0.1;
-        border-radius: 0;
-        border-radius: 10px;
-    }
+  
 }
