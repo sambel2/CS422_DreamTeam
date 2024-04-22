@@ -3,8 +3,7 @@ import { Link, useNavigate  } from 'react-router-dom'; // install react-router-d
 import '../styling/IntroPage.css';
 import { login } from '../services/AuthService'; 
 import logoImage from '../images/dreamteam_logo.png'; 
-// import passwordIcon from '../images/Password_Icon.png';
-// import userIcon from '../images/Username_Icon.png';
+
 
 const IntroPage = () => {
     const navigate = useNavigate(); // hook for navigation
