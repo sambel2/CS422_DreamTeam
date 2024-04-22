@@ -6,23 +6,23 @@ import profileIcon from '../images/profile_icon.png';
 const YourComponent = () => {
   return (
     <div>
-      <header className="home-header">
+      <header className="tools-header">
         <div></div>
         <div className="right-icons">
           <Link to="/profile"><img src={profileIcon} alt="Profile" /></Link>
         </div>
       </header>
 
-      <div className="container">
+      <div className="settings-container">
         <h1>Settings</h1>
-        <div className="box">Account</div>
-        <div className="box">Notifications</div>
-        <div className="box">Language</div>
-        <div className="box">Accessibility</div>
-        <div className="box">Support</div>
-        <div className="box">Terms & Conditions</div>
-        <div className="box">Privacy Policy</div>
-        <div className="box">Log out</div>
+        <div className="settings-box">Account</div>
+        <div className="settings-box">Notifications</div>
+        <div className="settings-box">Language</div>
+        <div className="settings-box">Accessibility</div>
+        <div className="settings-box">Support</div>
+        <div className="settings-box">Terms & Conditions</div>
+        <div className="settings-box">Privacy Policy</div>
+        <div className="settings-box">Log out</div>
       </div>
 
       <nav className="bottom-nav">
