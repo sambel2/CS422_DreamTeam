@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styling/AlarmForm.css'; 
 
 const AlarmForm = ({ addAlarm }) => {
     // State to store form inputs
@@ -19,7 +20,7 @@ const AlarmForm = ({ addAlarm }) => {
             <h2>Add New Alarm</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="time">Time:</label>
+                    <label htmlFor="time" class="label-left">Time:</label>
                     <input 
                         type="text" 
                         id="time" 
@@ -29,7 +30,7 @@ const AlarmForm = ({ addAlarm }) => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="description">Description:</label>
+                    <label htmlFor="description" class="label-left2">Description:</label>
                     <input 
                         type="text" 
                         id="description" 
@@ -38,7 +39,7 @@ const AlarmForm = ({ addAlarm }) => {
                         placeholder="Enter alarm description" 
                     />
                 </div>
-                <button type="submit">Add Alarm</button>
+                <button type="submit" class="alarm-button">Add Alarm</button>
             </form>
         </div>
     );
