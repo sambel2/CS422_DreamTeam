@@ -59,15 +59,15 @@
 
   
 .tools-content {
-    width: calc(100% - 70px); /* Adjust the width based on the icon width and additional margin */
+    width: calc(100% - 70px); 
 }
   
 .box-icon {
     position: absolute;
     top: 50%;
-    right: -20px; /* Adjust this value to move the icon further to the right */
+    right: -20px;
     transform: translateY(-50%);
-    width: 50px; /* Adjust the width as needed */
+    width: 50px; 
 }
 
 .audio-player {

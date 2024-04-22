@@ -2,10 +2,11 @@ import React from 'react';
 import '../styling/Tools.css'; 
 import profileIcon from '../images/profile_icon.png';
 import settingsIcon from '../images/settings_icon.png';
-
+/*
 import playButton from '../images/play_button.png';
 import fastFoward from '../images/fast_forward.png';
 import rewindButton from '../images/rewind-button.png';
+*/
 import AlarmIcon from '../images/Alarm Icon.png';
 import MusicIcon from '../images/Music Icon.png';
 import ReadIcon from '../images/Reading Icon.png';
@@ -71,16 +72,22 @@ const ToolsPage = () => {
      <div class="tools-box">
       <div className='tools-content'>
         <h2>Meditation & Breathing</h2>
-        <img src={VideoIcon} className="Video"/>
+        <img src={VideoIcon} alt="Video" className="Video"/>
         </div>
-        <img src={MeditationIcon} className="box-icon"/>
+        <img src={MeditationIcon} alt="Meditate" className="box-icon"/>
       </div> 
       
       <nav className="bottom-nav">
-            <Link to="/tools">Tools</Link>
-            <Link to="/tracking">Tracking</Link>
-            <Link to="/resources">Resources</Link>
-        </nav>
+                <Link to="/tools" className="tools">
+                    <span>Tools</span>
+                </Link>
+                <Link to="/tracking" className="tracking">
+                    <span>Tracking</span>
+                </Link>
+                <Link to="/resources" className="resources">
+                    <span>Resources</span>
+                </Link>
+            </nav>
     </div>
     
     );
