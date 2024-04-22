@@ -1,67 +1,119 @@
-.container {
+.tools-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
     padding: 20px;
     height: 100vh; 
+    color: #362C61;
+    background-color: transparent; 
 }
 
-.box {
-    width: 80%;
-    max-width: 600px; 
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 16px; 
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+.tools-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
 }
+
+
+.right-icons { /* Space between icons */
+    display: flex;
+    gap: 10px
+}
+
+.right-icons img {
+    width: 50px; /* Image size */
+    height: auto;
+}
+
+.tools-box {
+    background-color: transparent; 
+    border: 4px solid #362c61; 
+    color: #362c61;
+    padding: 8px 15px; 
+    font-size: 16px;
+    width:60%;
+    border-right:transparent;
+    margin:2%;
+    position: relative;
+}
+
+.tools-box select {
+    width: 20%; 
+    height: 50px; 
+    font-size: 16px;
+    padding: 5px 10px; 
+    border-color: #ca607f;
+    border-width: 4px;
+    border-radius:10px;
+    background-color: transparent;
+    color:rgb(78, 79, 80);
+}
+
+.tools-box img {
+    width: 20%;
+    height: auto;
+}
+
+
+  
+.tools-content {
+    width: calc(100% - 70px); /* Adjust the width based on the icon width and additional margin */
+}
+  
+.box-icon {
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Adjust this value to move the icon further to the right */
+    transform: translateY(-50%);
+    width: 50px; /* Adjust the width as needed */
+}
+
+.audio-player {
+    background-color: #ca607f;
+    border-radius: 50px;
+    padding: 5px;
+  }
+
+
+
+
+
+
 
 h1 {
     text-align: center; 
 }
 
-.home-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.right-icons {
-    display: flex;
-    align-items: center;
-}
-
-.right-icons img {
-    width: 30px; /* Adjust the size as needed */
-    height: auto;
-}
-
-.bottom-nav {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.bottom-nav a {
+ /* style for buttons */
+ .bottom-nav a {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: #fff;
     text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    font-size: 16px; /* Adjust the size as needed */
+    transition: background-color 0.3s; /* transition for hovver effect */
+    display: flex; /* flexbox for centering */
+    justify-content: center; 
+    align-items: center; 
 }
 
-.playback-controls {
-    display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
-    margin-top: 20px;
+.bottom-nav a:hover {
+    background-color: #3e8e41; /* darker shade on hover */
 }
 
-.playback-controls button {
-    width: 40px; /* Adjust the size as needed */
-    height: 40px; /* Adjust the size as needed */
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+/* more width for smaller screens */
+@media (max-width: 768px) {
+    .achievement-section button {
+        width: 90%; 
+    }
+/* let the buttons fill the space */
+    .bottom-nav a {
+        flex-grow: 1; 
+        margin: 0.1;
+        border-radius: 0;
+        border-radius: 10px;
+    }
 }
