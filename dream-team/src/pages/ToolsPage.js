@@ -7,6 +7,7 @@ import playButton from '../images/play_button.png';
 import fastFoward from '../images/fast_forward.png';
 import rewindButton from '../images/rewind-button.png';
 */
+import BottomNav from '../components/BottomNav.js';
 import AlarmIcon from '../images/Alarm Icon.png';
 import MusicIcon from '../images/Music Icon.png';
 import ReadIcon from '../images/Reading Icon.png';
@@ -77,17 +78,7 @@ const ToolsPage = () => {
         <img src={MeditationIcon} alt="Meditate" className="box-icon"/>
       </div> 
       
-      <nav className="bottom-nav">
-                <Link to="/tools" className="tools">
-                    <span>Tools</span>
-                </Link>
-                <Link to="/tracking" className="tracking">
-                    <span>Tracking</span>
-                </Link>
-                <Link to="/resources" className="resources">
-                    <span>Resources</span>
-                </Link>
-            </nav>
+      <BottomNav/>
     </div>
     
     );
