@@ -8,10 +8,15 @@
 
 .home-header {
     display: flex;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 100%;
+}
+
+.main-content img {
+    max-width: 200px;
+    margin: 0 auto 20px;
 }
 
 /* space between icons */
@@ -31,38 +36,39 @@
     text-decoration: none;
 }
 
+.schedule-section {
+    text-align: center;
+    color: #362C61;
+}
+
 /* center */
 .tracking-page {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 100%;
 }
 
-.graph {
-
-    height: 120px;
-    margin: 0 auto; 
+.graph{
+    width: 100px;
 }
 
  /* style for buttons */
  .bottom-nav a {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 20px;
-    background-color: #4CAF50;
+    border-radius: 10px;
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s; /* transition for hovver effect */
     display: flex; /* flexbox for centering */
     justify-content: center; 
     align-items: center; 
+    max-height: 50 px;
 }
 
-.bottom-nav a:hover {
-    background-color: #3e8e41; /* darker shade on hover */
-}
+/* .bottom-nav a:hover {
+    background-color: #3e8e41; darker shade on hover
+} */
 
 /* more width for smaller screens */
 @media (max-width: 768px) {
