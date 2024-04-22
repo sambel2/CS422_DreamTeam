@@ -51,12 +51,12 @@ input[type="password"] {
 
 
 .input-username {
-    background-image: url('../images/Username_Icon.png');
+    background-image: url('../images/username_Icon.png');
 
 }
 
 .input-password {
-    background-image: url('../images/Password_Icon.png');
+    background-image: url('../images/password_Icon.png');
 
 }
 
@@ -67,7 +67,7 @@ input[type="password"]:focus {
  
 
 .login-button {
-    background-image: url('../images/Button.png');
+    background-image: url('../images/button.png');
     background-color: transparent;
     background-size: cover; /* or try 'contain' if 'cover' stretches the image */
     background-repeat: no-repeat;

@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+.home-header .right-icons a {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px; /* move profile icon down or up*/
+}
 
+.home-header img.profile-icon { /*for the profile icon*/
+    width: 100%; 
+    height: auto;
+    border-radius: 50%; /*image is circular*/
+}
+
+/* Additional existing styles */
 .home-container {
     display: flex;
     flex-direction: column;
@@ -11,40 +28,16 @@
 
 .home-header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: flex-start; /* Align to the start */
     align-items: center;
-    padding: 1rem;
+    padding: 0 1rem; /* Reduced vertical padding */
     width: 100%;
-}
-
-/* space between icons */
-.right-icons {
-    display: flex;
-    gap: 10px; 
-}
-
-
-.home-header a {
-    background: #e7e7e7;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    text-decoration: none;
-}
-
-.home-header img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 /* center logo */
 .logo {
     height: 200px;
-    margin: 0 auto 20px;
+    
 }
 
 .main-content {
@@ -111,76 +104,28 @@
     margin-bottom: 10px; 
 }
 
-.bottom-nav a.tools {
-    background-image: url('../images/tools_Icon.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-}
-
-.bottom-nav a.tracking {
-    background-image: url('../images/tracking_Icon.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-}
-
-.bottom-nav a.resources {
-    background-image: url('../images/resources_Icon.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-}
-
-/* Style for nav icons */
-.bottom-nav a {
-    width: 60px; 
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(145deg, #cae9ff, #e3f1d5);
-    border-radius: 30%;  /* Make icons round */
-    text-decoration: none;  
-    box-shadow: none;  
-    border: none; 
-    overflow: hidden; 
-}
-
-.bottom-nav {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    width: 0%;
-    padding: 10px 0; 
-    background: linear-gradient(145deg, #cae9ff, #e3f1d5);
-    border-top: none; 
-}
-
-.bottom-nav span {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 15px; 
-    margin-top: 70px; /* Space between icon and text */
-    flex-direction: column;
-    text-align: center;
-}
-
 /* more width for smaller screens */
 @media screen and (orientation: portrait) {
     .home-container {
-        padding: 10px;  /* padding around the edges */
+        padding: 0px;  /* padding around the edges */
+        margin-top: -50; 
+        margin-bottom: -50px; 
     }
     
+    .home-header {
+        padding: 0 1rem; /*reduce padding but keep horizontal padding for alignment*/
+    }
+    
+    .right-icons a {
+        margin-top: 15px;
+    }
+
     .logo {
       /*logo size for smaller screens */
       height: 150px;
-      margin-top: 80px; 
+      margin-top: 0px; 
 
-      margin-bottom: -0px; 
+      margin-bottom: 0px; 
       
     }
     
