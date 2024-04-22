@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styling/Home.css'; 
-import achievementImage from '../images/trophy.png'; 
+import achievementImage from '../images/trophy_Icon.png'; 
 import profileIcon from '../images/profile_icon.png';
 import settingsIcon from '../images/settings_icon.png';
 import logoImage from '../images/dreamteam_logo.png'; 
@@ -11,6 +11,7 @@ const Home = () => {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
     //we can determine the image source to use if user didn't upload
     const userImageSrc = currentUser?.profileImage || profileIcon;
+    
 
     return (
         <div className="home-container">
@@ -27,14 +28,20 @@ const Home = () => {
                 <section className="achievement-section">
                     <img src={achievementImage} alt="Achievements" />
                     <p>Daily Achievements</p>
-                    <button>Click To Unlock More Achievements</button>
+                    <button>Unlock More Achievements</button>
                 </section>
             </main>
 
             <nav className="bottom-nav">
-                <Link to="/tools">Tools</Link>
-                <Link to="/tracking">Tracking</Link>
-                <Link to="/resources">Resources</Link>
+                <Link to="/tools" className="tools">
+                    <span>Tools</span>
+                </Link>
+                <Link to="/tracking" className="tracking">
+                    <span>Tracking</span>
+                </Link>
+                <Link to="/resources" className="resources">
+                    <span>Resources</span>
+                </Link>
             </nav>
         </div>
     );
