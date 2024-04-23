@@ -6,7 +6,14 @@
     height: 100vh; 
     color: #362C61;
     background-color: transparent; 
-    overflow: auto;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .tools-header {
