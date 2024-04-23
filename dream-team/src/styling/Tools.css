@@ -27,9 +27,10 @@
 
 .right-icons, .left-icons { /* Combined styles for simplicity */
     display: flex;
-    justify-content: center;
-    gap: 10px; /* Adds space between icons if there are multiple */
+    justify-content: center; /*aligns content to the right */
+    gap: 10px; 
     flex: 1; 
+}
 
 .right-icons img, .left-icons img {
     width: 50px;
