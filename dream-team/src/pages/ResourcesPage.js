@@ -52,11 +52,7 @@ const ResourcesPage = () => {
                 
         </main>
 
-        <nav className="bottom-nav">
-            <Link to="/tools">Tools</Link>
-            <Link to="/tracking">Tracking</Link>
-            <Link to="/resources">Resources</Link>
-        </nav>
+        <BottomNav /> {/* for the navigation buttons */}
     </div>
   );
 };
