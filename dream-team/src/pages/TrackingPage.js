@@ -7,6 +7,7 @@ import graphImage from '../images/graph.png';
 import { Link } from 'react-router-dom';
 import '../styling/TrackingPage.css'; 
 import BottomNav from '../components/BottomNav'; 
+import homeIcon from '../images/Home Icon.png';
 
 const TrackingPage = () => {
     // State to store alarms
@@ -20,10 +21,11 @@ const TrackingPage = () => {
         <div className="home-container">
             <header className="home-header">
                 <div></div>
+                <div className="left-icons">
+                    <left><Link to="/home"><img src={homeIcon} alt="Home" style={{ width: '50px', height: '50px' }} /></Link></left>
+                </div>
                 <div className="right-icons">
-                    <Link to="/profile">
-                            <img src={profileIcon} alt="Profile" className="profile-icon" />
-                    </Link>
+                    <right><Link to="/profile"><img src={profileIcon} alt="Profile" style={{ width: '50px', height: '50px' }} /></Link></right>
                 </div>
             </header>
 

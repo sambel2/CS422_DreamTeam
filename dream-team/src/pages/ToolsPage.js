@@ -15,6 +15,7 @@ import PlayerIcon from '../images/Player Icon.png';
 import MeditationIcon from '../images/Meditation Icon.png';
 import VideoIcon from '../images/Video Icon.png';
 import SleepSounds from '../Misc/SleepSounds.mp3';
+import homeIcon from '../images/Home Icon.png';
 
 import { Link } from 'react-router-dom';
 
@@ -24,9 +25,14 @@ const ToolsPage = () => {
     <div className = "tools-container">   
       <header className="tools-header">
           <div></div>
-          <div className="right-icons">
-              <Link to="/profile"><img src={profileIcon} alt="Profile" /></Link>
-          </div>
+            <div className="left-icons">
+                <Link to="/home"><img src={homeIcon} alt="Home" style={{ width: '50px', height: '50px' }} /></Link>
+            </div>
+            <div className="right-icons">
+                <Link to="/profile"><img src={profileIcon} alt="Profile" style={{ width: '50px', height: '50px' }} /></Link>
+            </div>
+
+
       </header> 
           <h1>TOOLS</h1>
     <div className="tools-box">

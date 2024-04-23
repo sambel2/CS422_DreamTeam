@@ -25,13 +25,15 @@
 }
 
 
-.right-icons { /* Space between icons */
+.right-icons, .left-icons { /* Combined styles for simplicity */
     display: flex;
-    gap: 10px
+    justify-content: flex-end; /* Aligns content to the right */
+    gap: 10px; /* Adds space between icons if there are multiple */
+    flex: 1; /* Allows the container to fill available space */
 }
 
-.right-icons img {
-    width: 50px; /* Image size */
+.right-icons img, .left-icons img {
+    width: 50px;
     height: auto;
 }
 
@@ -95,6 +97,14 @@ h1 {
         height: auto;
     }
 
+    .tools-header {
+        flex-direction: row; /* Stack the icons vertically on small screens */
+    }
+    .right-icons, .left-icons {
+        justify-content: center; /* Center the icons on small screens */
+        width: 100%; /* Full width to accommodate space */
+           
+    }
     h1 {
         font-size: 16px; /*smaller font size for headings */
     }

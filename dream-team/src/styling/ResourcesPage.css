@@ -18,7 +18,22 @@
 .right-icons {
     display: flex;
     gap: 10px; 
+    align-items: center;
 }
+  
+.left-icons {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+}
+  
+  .left-icons img,
+  .right-icons img {
+    width: 50px;
+    height: auto; 
+    object-fit: cover; 
+  }
+  
 
 .home-header a {
     background: #e7e7e7;
@@ -99,4 +114,17 @@
         width: 35px; 
         height: 35px;
     }
+
+    .left-icons img,
+    .right-icons img {
+      width: 30px; /* Even smaller icons for mobile */
+  
+    }
+  
+  
+    .settings-container img { /* Adjust title image for smaller screens */
+      width: 100%;
+      max-width: none; 
+    }
+  
 }

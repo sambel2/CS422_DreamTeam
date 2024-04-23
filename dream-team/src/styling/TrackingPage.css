@@ -21,10 +21,25 @@
 }
 
 /* space between icons */
+/* space between icons */
 .right-icons {
     display: flex;
     gap: 10px; 
+
 }
+  
+.left-icons {
+    display: flex;
+    gap: 10px; 
+
+}
+  
+  .left-icons img,
+  .right-icons img {
+    width: 50px;
+    height: auto; 
+    object-fit: cover; 
+  }
 
 .home-header a {
     background: #e7e7e7;

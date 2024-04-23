@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styling/ResourcesPage.css'; 
 import profileIcon from '../images/profile_icon.png';
 import resourcesNameIcon from '../images/resources_name_icon.png';
+import homeIcon from '../images/Home Icon.png';
 
 import BottomNav from '../components/BottomNav';
 
@@ -10,9 +11,11 @@ const ResourcesPage = () => {
   return (
     <div className="home-container">
         <header className="home-header">
-            <div></div>
+            <div className="left-icons">
+                <left><Link to="/home"><img src={homeIcon} alt="Home" style={{ width: '50px', height: '50px' }} /></Link></left>
+            </div>
             <div className="right-icons">
-                <Link to="/profile"><img src={profileIcon} alt="Profile" /></Link>
+                <right><Link to="/profile"><img src={profileIcon} alt="Profile" style={{ width: '50px', height: '50px' }} /></Link></right>
             </div>
         </header>
 
