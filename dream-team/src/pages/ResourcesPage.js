@@ -4,7 +4,7 @@ import '../styling/ResourcesPage.css';
 import profileIcon from '../images/profile_icon.png';
 import settingsIcon from '../images/settings_icon.png';
 import resourcesNameIcon from '../images/resources_name_icon.png';
-import resourcesBGIcon from '../images/resources_bg_icon.png';
+
 import BottomNav from '../components/BottomNav';
 
 const ResourcesPage = () => {
@@ -52,7 +52,7 @@ const ResourcesPage = () => {
             </section>
                 
         </main>
-
+        <p></p>
         <BottomNav /> {/* for the navigation buttons */}
     </div>
   );

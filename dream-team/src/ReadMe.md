@@ -17,4 +17,9 @@ Icon images fetched from https://www.rawpixel.com/
 
 Dummy Text from https://www.lipsum.com/
 
+4/22/2024:
+
+Canva.com was used to images such as logos, buttons, and other GUI.
+
+
 AI Usage: Canva was used to create logo, and images. MS word was used to create user agreement and privacy statement with alignment and autocrrect. Rawpixel was used to create icons.
