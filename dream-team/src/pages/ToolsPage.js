@@ -76,7 +76,8 @@ const ToolsPage = () => {
         </div>
         <img src={MeditationIcon} alt="Meditate" className="box-icon"/>
       </div> 
-    
+      <p></p>
+      <p></p>
       <BottomNav/>
     </div>
     

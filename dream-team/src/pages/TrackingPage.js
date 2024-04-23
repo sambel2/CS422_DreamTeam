@@ -38,7 +38,7 @@ const TrackingPage = () => {
                     <img src={graphImage} alt="Graph" className ="graph"/>  
                 </section>
             </main>
-
+            <p></p>
             <BottomNav /> {/* for the navigation buttons */}
         </div>
     );

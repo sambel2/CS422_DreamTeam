@@ -27,7 +27,8 @@ const YourComponent = () => {
     <div className="settings-box">Terms & Conditions</div>
     <div className="settings-box">Privacy Policy</div>
     <div className="settings-box">Log out</div>
-    <pr></pr>
+    <p></p>
+    <p></p>
     <BottomNav/>
     </div>
   );

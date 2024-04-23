@@ -28,11 +28,15 @@
 
 .bottom-nav img {
     width: 80px;
-    height: auto; /* Maintain aspect ratio */
-    
+    height: auto; /*maintain aspect ratio */
+    transition: transform 0.3s ease; /*icon also animates with the button */
 }
 
 
+.bottom-nav a:hover {
+    transform: translateY(-5px); /* Moves the button up slightly */
+    background-color: rgba(232, 61, 61, 0.2); /* Adds a slight white overlay */
+}
 
 .bottom-nav span {
     font-family: 'Roboto', sans-serif;
@@ -40,23 +44,35 @@
     color: black;
     text-align: center; 
     margin-top: 4px; /* Space above the text for separation */
-    background: transparent;
+   
 }
 
 
 @media (max-width: 768px) {
     .bottom-nav {
-        padding: 0px 0;  /* Less padding on mobile */
+        padding: 0px 10;  /* Less padding on mobile */
         margin-top: 0px; 
         margin-bottom: 0px; 
     }
 
-    .bottom-nav a {
-        
-        flex-direction: column; /* Icons above the text */
-        padding: 0px;  /* Slightly larger padding for easier touch */
-        margin: 0 0px; /* More space between buttons */
-        background: linear-gradient(145deg, #cae9ff, #f3e7e9, #e3f1d5);
+    .bottom-nav a::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120%; /* Larger than the button to cover entire area on click */
+        height: 120%;
+        background-color: rgba(151, 98, 191, 0.468); /* Semi-transparent blue ripple */
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        transition: transform 0.5s ease-out, opacity 0.3s ease;
+        z-index: 0;
+    }
+
+
+    .bottom-nav a:active::before {
+        transform: translate(-50%, -50%) scale(1); /* Scale up to beyond the button size */
+        opacity: 0; /* Fade out the ripple effect */
     }
 
     .bottom-nav img {
@@ -69,4 +85,5 @@
     .bottom-nav span {
         font-size: 16px; /* Smaller text to fit the compact layout */
     }
+    
 }

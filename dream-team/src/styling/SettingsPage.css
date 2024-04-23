@@ -19,9 +19,9 @@
 
 .left-icons img,
 .right-icons img {
-  width: 50px; /* Set a specific width */
-  height: auto; /* Set a specific height to maintain aspect ratio */
-  object-fit: cover; /* This will ensure the images cover the space without distortion */
+  width: 50px;
+  height: auto; 
+  object-fit: cover; 
 }
 
 .settings-container {
@@ -51,34 +51,15 @@
   }
   
 .settings-container img { /* Title Image */
-  max-width: 300px; /* Adjusted for more appropriate sizing */
-  width: 80%; /* Responsive width */
+  max-width: 300px; 
+  width: 80%; 
   height: auto;
   margin-bottom: 20px; /* Ensure space below the title */
 }
-
 .bottom-nav {
-  display: flex;
-  justify-content: center;
-  background-color: #f8f8f8;
-  border-top: 1px solid #ccc;
-  width: 100%;
-  padding: 10px 0;
-  margin-top: 0px; /* Adjust this value as needed to push down the nav */
+  width: 65%;
+  height: auto;
 }
-
-.bottom-nav a {
-  padding: 10px 20px;
-  margin: 0 5px;
-  border-radius: 20px;
-  text-decoration: none;
-
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-
-
 
 @media (max-width: 768px) {
   .left-icons img,
@@ -92,15 +73,11 @@
   }
 
   .settings-container img { /* Adjust title image for smaller screens */
-    width: 100%; /* Full width on smaller screens */
-    max-width: none; /* Remove max-width restriction */
-  }
-  .bottom-nav {
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #ccc;
     width: 100%;
-    padding: 10px 0;
-    margin-top: 50px; /* Adjust this value as needed to push down the nav */
+    max-width: none; 
+  }
+
+  .bottom-nav {
+    width: 65%;
   }
 }

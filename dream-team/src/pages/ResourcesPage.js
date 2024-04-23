@@ -51,6 +51,7 @@ const ResourcesPage = () => {
                 
         </main>
         <p></p>
+        <p></p>
         <BottomNav /> {/*for the navigation buttons */}
     </div>
   );
