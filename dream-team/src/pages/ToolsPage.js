@@ -1,7 +1,7 @@
 import React from 'react'; 
 import '../styling/Tools.css'; 
 import profileIcon from '../images/profile_icon.png';
-import settingsIcon from '../images/settings_icon.png';
+
 /*
 import playButton from '../images/play_button.png';
 import fastFoward from '../images/fast_forward.png';
@@ -26,7 +26,6 @@ const ToolsPage = () => {
           <div></div>
           <div className="right-icons">
               <Link to="/profile"><img src={profileIcon} alt="Profile" /></Link>
-              <Link to="/settings"><img src={settingsIcon} alt="Settings" /></Link>
           </div>
       </header> 
           <h1>TOOLS</h1>

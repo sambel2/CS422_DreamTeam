@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -29,15 +29,19 @@
     width: 40px;
     height: 40px;
     text-decoration: none;
+    
 }
 
 /* center logo */
 .main-content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between; 
     align-items: left;
     padding: 1rem;
     width: 100%;
+    overflow: auto;
+    
 }
 
 .Title {
@@ -83,40 +87,16 @@
     text-align: left;
 }
 
- /* style for buttons */
- .bottom-nav a {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s; /* transition for hovver effect */
-    display: flex; /* flexbox for centering */
-    justify-content: center; 
-    align-items: center; 
-}
-
-.bottom-nav a:hover {
-    background-color: #3e8e41; /* darker shade on hover */
-}
 
 /* more width for smaller screens */
 @media (max-width: 768px) {
     .home-header, .main-content, .Title, .paragraph, .articles-para, .adjustable-paragraph, .Articles, .Videos {
-        padding: 0 5%; 
+        
         text-align: center;
     }
 
     .home-header a {
         width: 35px; 
         height: 35px;
-    }
-
-    .bottom-nav a {
-        flex-grow: 1; 
-        margin: 2px; 
-        border-radius: 5px;
-        
     }
 }

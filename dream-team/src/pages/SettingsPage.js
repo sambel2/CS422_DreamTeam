@@ -11,13 +11,13 @@ const YourComponent = () => {
   <div className="settings-container">
     <header className="settings-header">
       <div className="left-icons">
-      <Link to="/home"><img src={homeIcon} alt="Home"/></Link>
+        <left><Link to="/home"><img src={homeIcon} alt="Home" style={{ width: '50px', height: '50px' }} /></Link></left>
       </div>
       <div className="right-icons">
-      <Link to="/profile"><img src={profileIcon} alt="Profile" /></Link>
+        <right><Link to="/profile"><img src={profileIcon} alt="Profile" style={{ width: '50px', height: '50px' }} /></Link></right>
       </div>
-    
     </header>
+
     <img src={SettingsTitle} alt="SettingsTitle" />
     <div className="settings-box">Account</div>
     <div className="settings-box">Notifications</div>
@@ -27,6 +27,7 @@ const YourComponent = () => {
     <div className="settings-box">Terms & Conditions</div>
     <div className="settings-box">Privacy Policy</div>
     <div className="settings-box">Log out</div>
+    <pr></pr>
     <BottomNav/>
     </div>
   );

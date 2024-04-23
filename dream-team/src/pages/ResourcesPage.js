@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styling/ResourcesPage.css'; 
 import profileIcon from '../images/profile_icon.png';
-import settingsIcon from '../images/settings_icon.png';
 import resourcesNameIcon from '../images/resources_name_icon.png';
 
 import BottomNav from '../components/BottomNav';
@@ -14,7 +13,6 @@ const ResourcesPage = () => {
             <div></div>
             <div className="right-icons">
                 <Link to="/profile"><img src={profileIcon} alt="Profile" /></Link>
-                <Link to="/settings"><img src={settingsIcon} alt="Settings" /></Link>
             </div>
         </header>
 

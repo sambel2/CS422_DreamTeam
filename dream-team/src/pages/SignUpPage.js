@@ -80,6 +80,8 @@ const SignUpPage = () => {
                 <input name="username" type="text" placeholder="Username*" value={formData.username} onChange={handleInputChange} required />
                 <input name="password" type="password" placeholder="Password*" value={formData.password} onChange={handleInputChange} required />
                 <input name="birthdate" type="date" placeholder="Birthdate*" value={formData.birthdate} onChange={handleInputChange} required />
+                {birthdateError && <div style={{ color: 'red' }}>{birthdateError}</div>}
+
                 <input name="email" type="email" placeholder="Email (Optional)" value={formData.email} onChange={handleInputChange} />
                 
                 {/* Additional survey questions */}

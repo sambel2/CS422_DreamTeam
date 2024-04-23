@@ -41,6 +41,8 @@
     margin-bottom: 10px; 
 }
 
+
+
 /* more width for smaller screens */
 @media (max-width: 768px) {
     .achievement-section button {

@@ -6,6 +6,7 @@
     height: 100vh; 
     color: #362C61;
     background-color: transparent; 
+    overflow: auto;
 }
 
 .tools-header {
@@ -59,6 +60,7 @@
   
 .tools-content {
     width: calc(100% - 70px); 
+    
 }
   
 .box-icon {
