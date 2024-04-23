@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styling/ForgotPasswordPage.css';
+import forgotPasswordLogo from '../images/forgot_Password.png';
 
 const ForgotPasswordPage = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const ForgotPasswordPage = () => {
 
   return (
     <div className="forgot-password-page">
-      <h1>Forgot Password</h1>
+      <img src={forgotPasswordLogo} alt="Forgot Password" className="forgot-password-logo"/>
       <p>Enter your email or username and we'll send you a link to reset your password.</p>
       <form onSubmit={handleSubmit}>
         <input
@@ -32,7 +33,7 @@ const ForgotPasswordPage = () => {
           onChange={(e) => setUserInput(e.target.value)}
           required
         />
-        <button type="submit">Send Reset Link</button>
+        <center><button type="submit">Send Reset Link</button></center>
       </form>
       {message && <p>{message}</p>}
       <button onClick={handleGoBack} style={{ marginTop: '20px', background: 'none', border: 'none', color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>

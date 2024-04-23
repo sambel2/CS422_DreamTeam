@@ -29,14 +29,14 @@
     display: flex;
     justify-content: flex-start; /* Align to the start */
     align-items: center;
-    padding: 0 1rem; /* Reduced vertical padding */
+    padding: 0 1rem;
     width: 100%;
 }
 
 /* center logo */
 .logo {
-    width: 350px; /* Updated width */
-    height: auto; /* Maintain aspect ratio */
+    width: 350px;
+    height: auto; 
     margin-top: 0px; /* Move up */
     margin-bottom: 200px; /* Move down */
 }
@@ -83,10 +83,7 @@
     font-size: 1rem;
     color: white;
     background-image: url('../images/button.png');
-    background-color: transparent;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
     border: none;
     color: white;
     font-size: 14px;
@@ -108,13 +105,13 @@
 /* more width for smaller screens */
 @media screen and (orientation: portrait) {
     .home-container {
-        padding: 0px;  /* padding around the edges */
+        padding: 0px;
         margin-top: 0; 
         margin-bottom: 30px; 
     }
     
     .home-header {
-        padding: 0 1rem; /*reduce padding but keep horizontal padding for alignment*/
+        padding: 0 1rem;
     }
     
     .right-icons a {
@@ -122,10 +119,10 @@
     }
 
     .logo {
-        width: 350px; /* Smaller width for a more proportional appearance on mobile */
-        height: auto; /* Maintain aspect ratio */
-        margin-top: -10px; /* Adjust logo position upwards */
-        margin-bottom: 100px; /* Adjust logo position downwards */
+        width: 350px;
+        height: auto;
+        margin-top: -10px;
+        margin-bottom: 100px;
     }
     
     
