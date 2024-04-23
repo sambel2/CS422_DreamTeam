@@ -33,7 +33,7 @@ const Home = () => {
                     <button>Unlock More Achievements</button>
                 </section>
             </main>
-            <BottomNav /> {/* for the navigation buttons */}
+            <BottomNav /> {/*for the navigation buttons */}
         </div>
     );
 };

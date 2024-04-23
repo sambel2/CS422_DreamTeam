@@ -67,7 +67,7 @@ text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .sign-up-form {
-    width: 90%; 
-}
+        .sign-up-form {
+        width: 90%; 
+    }
 }

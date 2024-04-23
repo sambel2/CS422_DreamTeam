@@ -21,7 +21,7 @@ const handleInputChange = (e) => {
     }
 };
 
-// handle the login for AuthServie to do logic
+//handle the login for AuthServie to do logic
 const handleSubmit = (e) => {
     e.preventDefault();
     

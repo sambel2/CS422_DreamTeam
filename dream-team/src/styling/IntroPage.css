@@ -21,8 +21,6 @@ form {
     margin: 0 auto; 
 }
 
-
-
 input[type="text"],
 input[type="password"] {
     width: 80%;
@@ -45,7 +43,7 @@ input[type="password"] {
 .input-password {
     position: relative; 
     padding-left: 60px; /* padding to accommodate icons */
-    background-size: 30px; /* Increase size of the background icon */
+    background-size: 30px;
     background-position: 15px center;
 }
 
