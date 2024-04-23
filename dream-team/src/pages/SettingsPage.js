@@ -16,6 +16,7 @@ const YourComponent = () => {
       <div className="right-icons">
       <Link to="/profile"><img src={profileIcon} alt="Profile" /></Link>
       </div>
+    
     </header>
     <img src={SettingsTitle} alt="SettingsTitle" />
     <div className="settings-box">Account</div>
