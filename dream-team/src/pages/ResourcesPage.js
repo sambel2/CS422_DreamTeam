@@ -52,7 +52,7 @@ const ResourcesPage = () => {
             </section>
                 
         </main>
-
+        <p></p>
         <BottomNav /> {/* for the navigation buttons */}
     </div>
   );

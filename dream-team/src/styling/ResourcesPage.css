@@ -70,9 +70,9 @@
 }
 
 .adjustable-paragraph {
-    width: 90vw;
-    text-align: left;
-  }
+    width: 100%; /* Full width */
+    padding: 0 10px; /* Add padding */
+}
   
 
 .Articles {
@@ -103,14 +103,20 @@
 
 /* more width for smaller screens */
 @media (max-width: 768px) {
-    .achievement-section button {
-        width: 90%; 
+    .home-header, .main-content, .Title, .paragraph, .articles-para, .adjustable-paragraph, .Articles, .Videos {
+        padding: 0 5%; 
+        text-align: center;
     }
-/* let the buttons fill the space */
+
+    .home-header a {
+        width: 35px; 
+        height: 35px;
+    }
+
     .bottom-nav a {
         flex-grow: 1; 
-        margin: 0.1;
-        border-radius: 0;
-        border-radius: 10px;
+        margin: 2px; 
+        border-radius: 5px;
+        
     }
 }

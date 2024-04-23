@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import '../styling/SignUpPage.css';
 import { createAccount } from '../services/AuthService';
+import createTitle from '../images/create_Account.png';
 
 const SignUpPage = () => {  
     const navigate = useNavigate();
@@ -73,7 +74,7 @@ const SignUpPage = () => {
 
     return (
         <div className="sign-up-page">
-            <h1>Create Account</h1>
+            <img src={createTitle} alt="title"/>
             <form onSubmit={handleSubmit} className="sign-up-form">
                 {/* Basic account information */}
                 <input name="username" type="text" placeholder="Username*" value={formData.username} onChange={handleInputChange} required />

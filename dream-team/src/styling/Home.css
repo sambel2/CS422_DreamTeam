@@ -79,27 +79,24 @@
 }
 
 .achievement-section button {
-    padding: 0; 
-    font-size: 1rem;
+    padding: 0;
+    font-size: 14px; /* Unified font size */
+    background-color: transparent;
     color: white;
     background-image: url('../images/button.png');
-
+    background-size: cover; /* Ensure the background covers the button */
+    background-position: center; /* Center the background image */
     border: none;
-    color: white;
-    font-size: 14px;
-    border-radius: 20px; 
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     text-align: center;
-    margin: 0 auto;
-    width: 330px; /* Set a fixed width */
-    height: 88px; /* Set a fixed height */
-
-   
-    box-shadow: none; /* Reset the box shadow */
-    margin-bottom: 100px; 
+    margin: 0 auto 100px; /* Adjusted margin for bottom spacing */
+    width: 330px; /* Fixed width */
+    height: 88px; /* Fixed height */
+    box-shadow: none; /* No shadow */
 }
 
 /* more width for smaller screens */
