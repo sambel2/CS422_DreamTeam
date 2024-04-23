@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import '../styling/ProfilePage.css';
+import profileIcon from '../images/profile_icon.png';
+import profileLogo from '../images/profile_Logo.png';
 
 const ProfilePage = () => {
   const navigate = useNavigate();
@@ -26,6 +28,7 @@ const ProfilePage = () => {
 
 
   const handleEditProfile = () => {
+    navigate('/settings');
     // logic to handle profile editing for future dev
   };
 
@@ -81,20 +84,29 @@ const ProfilePage = () => {
   
   return (
     <div className="profile-page">
-      <h1>User Profile</h1>
+      <img src={profileLogo} alt="User Profile" className="profile-logo" />
         <div className="profile-info">
           {/* profile Page Content */}
-          <input type="file-1" ref={fileInputRef} style={{ display: 'none' }} onChange={handleImageChange} accept="image/*" id="imageUpload" />
+          <input type="file" ref={fileInputRef} style={{ display: "none" }} onChange={handleImageChange} accept="image/*" id="imageUpload" />
           {/* trigger input on image or label click */}
           <div className="profile-image" onClick={triggerFileInput}>
-              {currentUser.profileImage ? (
-                <img src={currentUser.profileImage} alt="Profile" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
-              ) : (
-                <label htmlFor="imageUpload" style={{cursor: 'pointer'}}>Upload Image</label>
-              )}
-              <input type="file" id="imageUpload" accept="image/*" onChange={handleImageChange} style={{display: 'none'}} ref={fileInputRef} />
-            </div>
-            {renderDetail('Username', currentUser.username)}
+  <img 
+    src={currentUser.profileImage || profileIcon}
+    alt="Profile"
+    className={currentUser.profileImage ? "user-profile-image" : "default-profile-image"}
+    style={{
+      objectFit: 'cover',
+      width: '100%',
+      height: '100%',
+      borderRadius: '50%', // If you want a circle image
+    }}
+  />
+</div>
+<label htmlFor="imageUpload" style={{ cursor: 'pointer' }}>
+  {currentUser.profileImage ? 'Click Image to Change' : 'Click Image to Upload'}
+</label>
+            
+            {renderDetail(<strong>Username</strong>, currentUser.username)}
             {renderDetail('Email', currentUser.email)}
             {renderDetail('Birthdate', currentUser.birthdate)}
             {renderDetail('Student Status', currentUser.isStudent ? 'Yes' : 'No')}
@@ -103,10 +115,10 @@ const ProfilePage = () => {
             {renderDetail('Commute by Driving', currentUser.drives ? 'Yes' : 'No')}
             {/* we can implement more profile info as needed later */}
             <p></p>
-            <button onClick={handleEditProfile}>Edit Profile</button>
-            <button onClick={handleGoBack}>Go Back</button>
+            <center><button onClick={handleEditProfile}>Settings</button></center>
         </div>
-      
+        <p></p>
+        <button onClick={handleGoBack}>Go Back</button>
     </div>
   );
 };
