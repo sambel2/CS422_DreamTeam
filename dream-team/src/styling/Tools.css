@@ -27,10 +27,9 @@
 
 .right-icons, .left-icons { /* Combined styles for simplicity */
     display: flex;
-    justify-content: flex-end; /* Aligns content to the right */
+    justify-content: center;
     gap: 10px; /* Adds space between icons if there are multiple */
-    flex: 1; /* Allows the container to fill available space */
-}
+    flex: 1; 
 
 .right-icons img, .left-icons img {
     width: 50px;
@@ -98,14 +97,15 @@ h1 {
     }
 
     .tools-header {
-        flex-direction: row; /* Stack the icons vertically on small screens */
+        flex-direction: row; 
     }
+
     .right-icons, .left-icons {
-        justify-content: center; /* Center the icons on small screens */
-        width: 100%; /* Full width to accommodate space */
+        justify-content: center; /* center the icons on small screens */
+        width: 100%; 
            
     }
     h1 {
-        font-size: 16px; /*smaller font size for headings */
+        font-size: 16px;
     }
 }
