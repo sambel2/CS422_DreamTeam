@@ -14,11 +14,11 @@
     width: 25px;
     height: 0px;
     display: flex;
-    flex-direction: column-reverse; /* Stack icon and text vertically */
+    flex-direction: column-reverse; 
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: inherit; /* Use text color from parent or explicitly set if needed */
+    color: inherit; 
     box-shadow: none;  /* Remove any box shadows */
     border: none;
     background: transparent;
@@ -28,14 +28,14 @@
 
 .bottom-nav img {
     width: 80px;
-    height: auto; /*maintain aspect ratio */
-    transition: transform 0.3s ease; /*icon also animates with the button */
+    height: auto;
+    transition: transform 0.3s ease; /*icon animates with the button */
 }
 
 
 .bottom-nav a:hover {
     transform: translateY(-5px); /* Moves the button up slightly */
-    background-color: rgba(232, 61, 61, 0.2); /* Adds a slight white overlay */
+    background-color: rgba(232, 61, 61, 0.2); 
 }
 
 .bottom-nav span {
@@ -60,9 +60,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 120%; /* Larger than the button to cover entire area on click */
+        width: 120%; 
         height: 120%;
-        background-color: rgba(151, 98, 191, 0.468); /* Semi-transparent blue ripple */
+        background-color: rgba(151, 98, 191, 0.468); /*semi-transparent  ripple */
         transform: translate(-50%, -50%) scale(0);
         border-radius: 50%;
         transition: transform 0.5s ease-out, opacity 0.3s ease;
@@ -71,19 +71,19 @@
 
 
     .bottom-nav a:active::before {
-        transform: translate(-50%, -50%) scale(1); /* Scale up to beyond the button size */
-        opacity: 0; /* Fade out the ripple effect */
+        transform: translate(-50%, -50%) scale(1); /*scale up to beyond the button size */
+        opacity: 0; /*fade out the ripple effect */
     }
 
     .bottom-nav img {
         margin-top: 0px; 
 
         margin-bottom: 0px; 
-        width: 70px;  /* Even smaller icons for very small screens */
+        width: 70px;
     }
 
     .bottom-nav span {
-        font-size: 16px; /* Smaller text to fit the compact layout */
+        font-size: 16px; 
     }
     
 }
