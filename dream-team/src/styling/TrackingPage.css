@@ -54,16 +54,9 @@
     width: 100px;
 }
 
-
-/* .bottom-nav a:hover {
-    background-color: #3e8e41; darker shade on hover
-} */
-
 /* more width for smaller screens */
 @media (max-width: 768px) {
     .achievement-section button {
         width: 90%; 
     }
-/* let the buttons fill the space */
-
 }

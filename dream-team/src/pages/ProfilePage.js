@@ -86,7 +86,7 @@ const ProfilePage = () => {
     <div className="profile-page">
       <img src={profileLogo} alt="User Profile" className="profile-logo" />
         <div className="profile-info">
-          {/* profile Page Content */}
+          {/*profile Page Content */}
           <input type="file" ref={fileInputRef} style={{ display: "none" }} onChange={handleImageChange} accept="image/*" id="imageUpload" />
           {/* trigger input on image or label click */}
           <div className="profile-image" onClick={triggerFileInput}>

@@ -107,9 +107,9 @@ body {
 
 .profile-logo {
     max-width: 100%; 
-    max-height: auto; /* maximum height */
-    margin: 20px auto; /* centers the logo and adds space around it */
-    display: block; /* necessary for applying margin auto */
+    max-height: auto; /*maximum height */
+    margin: 20px auto;
+    display: block;
 }
 
 /*adjustments for smaller screens */

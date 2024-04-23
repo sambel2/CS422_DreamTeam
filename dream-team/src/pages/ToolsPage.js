@@ -83,5 +83,5 @@ const ToolsPage = () => {
     
     );
 };
-/* links to Alarms, calming sounds, audio books, meditation */
+/*links to Alarms, calming sounds, audio books, meditation */
 export default ToolsPage;
