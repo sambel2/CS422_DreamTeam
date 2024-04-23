@@ -82,8 +82,8 @@ h1 {
 
 @media (max-width: 768px) {
     .tools-container {
-        padding: 10px; /* Reduced padding for smaller screens */
-        height: auto; /* Allow natural height flow */
+        padding: 10px;
+        height: auto;
     }
 
     h1 {
