@@ -82,18 +82,18 @@ text-decoration: underline;
     height: 48px; /* Set a fixed height */
 
     padding: 10px; 
-    box-shadow: none; /* Reset the box shadow */
+    box-shadow: none;
     margin-bottom: 10px; 
 }
 
 @media (max-width: 768px) {
     .sign-up-form {
-        width: 90%; /* Adjusted width for smaller screens */
-        max-width: 90%; /* Added max-width to prevent form from stretching too much */
+        width: 90%;
+        max-width: 90%;
     }
   
     .sign-up-page img {
-        width: 100%; /* Adjusted image width for smaller screens */
+        width: 100%;
     }
 
     .sign-up-form input[type="text"],
@@ -102,12 +102,12 @@ text-decoration: underline;
     .sign-up-form input[type="number"],
     .sign-up-form select,
     .sign-up-form label {
-        margin: 2% 0; /* Adjusted margin for smaller screens */
+        margin: 2% 0;
         width: 80%;
         
     }
 
     .sign-up-form label.date-of-birth {
-        font-size: 12px; /* Adjust font size for smaller screens */
+        font-size: 12px;
     }
 }
