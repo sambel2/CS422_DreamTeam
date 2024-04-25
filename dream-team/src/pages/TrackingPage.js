@@ -3,9 +3,9 @@ import AlarmForm from '../components/AlarmForm';
 import Schedule from '../components/Schedule';
 import profileIcon from '../images/profile_icon.png';
 import trackingNameIcon from '../images/tracking_name_icon.png';
-import graphImage from '../images/graph.png';
+
 import { Link } from 'react-router-dom';
-import Chart from 'chart.js/auto'; // Import Chart.js
+import Chart from 'chart.js/auto'; // Import Chart.js -type in command line: npm install chart.js
 import '../styling/TrackingPage.css';
 import BottomNav from '../components/BottomNav';
 import homeIcon from '../images/Home Icon.png';
