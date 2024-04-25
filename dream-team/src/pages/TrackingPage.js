@@ -1,22 +1,66 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import AlarmForm from '../components/AlarmForm';
 import Schedule from '../components/Schedule';
 import profileIcon from '../images/profile_icon.png';
 import trackingNameIcon from '../images/tracking_name_icon.png';
-import graphImage from '../images/graph.png'; 
+import graphImage from '../images/graph.png';
 import { Link } from 'react-router-dom';
-import '../styling/TrackingPage.css'; 
-import BottomNav from '../components/BottomNav'; 
+import Chart from 'chart.js/auto'; // Import Chart.js
+import '../styling/TrackingPage.css';
+import BottomNav from '../components/BottomNav';
 import homeIcon from '../images/Home Icon.png';
 
 const TrackingPage = () => {
-    // State to store alarms
     const [alarms, setAlarms] = useState([]);
+    const chartRef = useRef(null); // Reference to the Chart instance
 
-    // Function to add new alarm
     const addAlarm = (newAlarm) => {
         setAlarms([...alarms, newAlarm]);
     };
+
+    const updateGraph = () => {
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        if (chartRef.current) {
+            chartRef.current.destroy(); // Destroy existing chart if it exists
+        }
+
+        const labels = alarms.map(alarm => alarm.date);
+        const data = alarms.map(alarm => alarm.hours);
+
+        // Create new chart instance
+        chartRef.current = new Chart(ctx, {
+            type: 'line', // Specify line chart
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Sleep Pattern',
+                    data: data,
+                    fill: false, // Don't fill the area under the line
+                    borderColor: 'rgba(202, 96, 127, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    };
+
+    useEffect(() => {
+        updateGraph();
+        return () => {
+            // Clean up when component unmounts
+            if (chartRef.current) {
+                chartRef.current.destroy();
+            }
+        };
+    }, [alarms]);
+
     return (
         <div className="home-container">
             <header className="home-header">
@@ -30,21 +74,20 @@ const TrackingPage = () => {
             </header>
 
             <main className="main-content">
-                <h1><img src = {trackingNameIcon} alt = "Tracking" className="tracking-icon"/></h1>
+                <h1><img src={trackingNameIcon} alt="Tracking" className="tracking-icon" /></h1>
                 <section className="alarm-section">
-                    <AlarmForm addAlarm={addAlarm}/>
+                    <AlarmForm addAlarm={addAlarm} />
                     <Schedule alarms={alarms} />
                 </section>
                 <section className="schedule-section">
-                    <h2>Alarm Statistics</h2>
-                    <img src={graphImage} alt="Graph" className ="graph"/>  
+                    <h2>Sleep Statistics</h2>
+                    <canvas id="myChart" width="400" height="200"></canvas>
                 </section>
             </main>
             <p></p>
-            <BottomNav /> {/* for the navigation buttons */}
+            <BottomNav />
         </div>
     );
 };
-
 
 export default TrackingPage;
