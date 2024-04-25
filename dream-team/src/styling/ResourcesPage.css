@@ -107,7 +107,11 @@
 @media (max-width: 768px) {
     .home-header, .main-content, .Title, .paragraph, .articles-para, .adjustable-paragraph, .Articles, .Videos {
         
-        text-align: center;
+        text-align: left;
+    }
+
+    .Title {
+        width: 420px;
     }
 
     .home-header a {
@@ -120,6 +124,14 @@
       width: 30px; /* Even smaller icons for mobile */
   
     }
+  
+  
+    .settings-container img { /* Adjust title image for smaller screens */
+      width: 100%;
+      max-width: none; 
+    }
+
+}
   
   
     .settings-container img { /* Adjust title image for smaller screens */
