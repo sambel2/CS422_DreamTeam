@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/CS422_DreamTeam/static/css/main.49e0ab57.css",
+    "main.js": "/CS422_DreamTeam/static/js/main.56b8e5e6.js",
+    "static/js/453.2e9a70c8.chunk.js": "/CS422_DreamTeam/static/js/453.2e9a70c8.chunk.js",
+    "static/media/SleepSounds.mp3": "/CS422_DreamTeam/static/media/SleepSounds.b95d959212834b735487.mp3",
+    "static/media/trophy_Icon.png": "/CS422_DreamTeam/static/media/trophy_Icon.9b9706e8a80a74c80d65.png",
+    "static/media/resources_bg_icon.png": "/CS422_DreamTeam/static/media/resources_bg_icon.ec4bc29b161aa07072a7.png",
+    "static/media/button.png": "/CS422_DreamTeam/static/media/button.121d9b67624bd78aa1e8.png",
+    "static/media/dreamteam_logo.png": "/CS422_DreamTeam/static/media/dreamteam_logo.cdc4e519134df45c5a3e.png",
+    "static/media/Reading Icon.png": "/CS422_DreamTeam/static/media/Reading Icon.1b07939adf11a8321a59.png",
+    "static/media/resources_Icon.png": "/CS422_DreamTeam/static/media/resources_Icon.56cde3cf59ac9691acfa.png",
+    "static/media/Meditation Icon.png": "/CS422_DreamTeam/static/media/Meditation Icon.4579c56c3f45cfa5ea7b.png",
+    "static/media/tools_Icon.png": "/CS422_DreamTeam/static/media/tools_Icon.cb28a438745d4dc92420.png",
+    "static/media/Alarm Icon.png": "/CS422_DreamTeam/static/media/Alarm Icon.be50d74ae9a08e293a25.png",
+    "static/media/Music Icon.png": "/CS422_DreamTeam/static/media/Music Icon.ae0f40464efa5c2cb5af.png",
+    "static/media/tracking_Icon.png": "/CS422_DreamTeam/static/media/tracking_Icon.58054c50fa83d4dbc319.png",
+    "static/media/resources_name_icon.png": "/CS422_DreamTeam/static/media/resources_name_icon.56ed06b895df70a7616b.png",
+    "static/media/forgot_Password.png": "/CS422_DreamTeam/static/media/forgot_Password.0fb7f2d3b7f30b16815b.png",
+    "static/media/tracking_name_icon.png": "/CS422_DreamTeam/static/media/tracking_name_icon.7b17d2dc407f955c745e.png",
+    "static/media/profile_icon.png": "/CS422_DreamTeam/static/media/profile_icon.052f7681cdb0c5a6b3ee.png",
+    "static/media/Home Icon.png": "/CS422_DreamTeam/static/media/Home Icon.5488c49a20864a73175f.png",
+    "static/media/profile_Logo.png": "/CS422_DreamTeam/static/media/profile_Logo.19f8e8403a62e90565c6.png",
+    "static/media/Settings_Title.png": "/CS422_DreamTeam/static/media/Settings_Title.bb07cd0e58d8111b3378.png",
+    "static/media/password_Icon.png": "/CS422_DreamTeam/static/media/password_Icon.f53f897fa430533eff1f.png",
+    "static/media/create_Account.png": "/CS422_DreamTeam/static/media/create_Account.70f3f1e40cb778eb4435.png",
+    "static/media/username_Icon.png": "/CS422_DreamTeam/static/media/username_Icon.0bb4936b927f52811b31.png",
+    "static/media/privacy-policy.txt": "/CS422_DreamTeam/static/media/privacy-policy.ee0909faae66c80736a8.txt",
+    "static/media/user-agreement.txt": "/CS422_DreamTeam/static/media/user-agreement.6ca38f1636b52e34e97a.txt",
+    "index.html": "/CS422_DreamTeam/index.html",
+    "main.49e0ab57.css.map": "/CS422_DreamTeam/static/css/main.49e0ab57.css.map",
+    "main.56b8e5e6.js.map": "/CS422_DreamTeam/static/js/main.56b8e5e6.js.map",
+    "453.2e9a70c8.chunk.js.map": "/CS422_DreamTeam/static/js/453.2e9a70c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49e0ab57.css",
+    "static/js/main.56b8e5e6.js"
+  ]
+}

@@ -21,7 +21,7 @@
     .sign-up-form input[type="number"],
     .sign-up-form select,
     .sign-up-form label {
-        width: 100%;
+        width: 80%;
         border-radius: 10px;
         background-color: transparent; 
         border: 4px solid #362c61; 
@@ -32,18 +32,6 @@
         position: relative;
 }
 
-    .sign-up-form button {
-        padding: 10px;
-        background-color: #007bff; 
-        color: white;
-        border: none;
-        border-radius: 1px; 
-        cursor: pointer;
-}
-
-    .sign-up-form button:hover {
-        background-color: #0056b3; /* Darker shade for hover effect */
-}
 
     .sign-up-form label {
         display: flex;
@@ -66,8 +54,60 @@ text-decoration: underline;
     height:auto;
 }
 
+
+.sign-up-form label.date-of-birth {
+    text-align: center;
+    font-size: 14px; /* Adjust font size */
+    margin: 0 auto; /* Center the label */
+}
+
+
+.signup-button {
+    background-image: url('../images/button.png');
+    background-color: transparent;
+    background-size: cover; /* or try 'contain' if 'cover' stretches the image */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 230px; /* Set a fixed width */
+    height: 48px; /* Set a fixed height */
+
+    padding: 10px; 
+    box-shadow: none;
+    margin-bottom: 10px; 
+}
+
 @media (max-width: 768px) {
-        .sign-up-form {
-        width: 90%; 
+    .sign-up-form {
+        width: 90%;
+        max-width: 90%;
+    }
+  
+    .sign-up-page img {
+        width: 100%;
+    }
+
+    .sign-up-form input[type="text"],
+    .sign-up-form input[type="password"],
+    .sign-up-form input[type="email"],
+    .sign-up-form input[type="number"],
+    .sign-up-form select,
+    .sign-up-form label {
+        margin: 2% 0;
+        width: 80%;
+        
+    }
+
+    .sign-up-form label.date-of-birth {
+        font-size: 12px;
     }
 }
