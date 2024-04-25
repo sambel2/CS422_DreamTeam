@@ -93,17 +93,25 @@ const ToolsPage = () => {
           src={getVideoUrl()}
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
         </div>
       <img src={ReadIcon} alt="ReadAloud" className="box-icon"/>
       </div>
-
+      
      <div class="tools-box">
       <div className='tools-content'>
         <h2>Meditation & Breathing</h2>
-        <img src={VideoIcon} alt="Video" className="Video"/>
+        <iframe
+          width="40%"
+          height="auto"
+          src= 'https://www.youtube.com/embed/U9YKY7fdwyg'
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         </div>
         <img src={MeditationIcon} alt="Meditate" className="box-icon"/>
       </div> 
