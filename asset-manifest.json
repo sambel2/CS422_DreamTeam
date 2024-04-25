@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CS422_DreamTeam/static/css/main.49e0ab57.css",
-    "main.js": "/CS422_DreamTeam/static/js/main.56b8e5e6.js",
+    "main.css": "/CS422_DreamTeam/static/css/main.100992ed.css",
+    "main.js": "/CS422_DreamTeam/static/js/main.ed878ff2.js",
     "static/js/453.2e9a70c8.chunk.js": "/CS422_DreamTeam/static/js/453.2e9a70c8.chunk.js",
     "static/media/SleepSounds.mp3": "/CS422_DreamTeam/static/media/SleepSounds.b95d959212834b735487.mp3",
     "static/media/trophy_Icon.png": "/CS422_DreamTeam/static/media/trophy_Icon.9b9706e8a80a74c80d65.png",
@@ -28,12 +28,12 @@
     "static/media/privacy-policy.txt": "/CS422_DreamTeam/static/media/privacy-policy.ee0909faae66c80736a8.txt",
     "static/media/user-agreement.txt": "/CS422_DreamTeam/static/media/user-agreement.6ca38f1636b52e34e97a.txt",
     "index.html": "/CS422_DreamTeam/index.html",
-    "main.49e0ab57.css.map": "/CS422_DreamTeam/static/css/main.49e0ab57.css.map",
-    "main.56b8e5e6.js.map": "/CS422_DreamTeam/static/js/main.56b8e5e6.js.map",
+    "main.100992ed.css.map": "/CS422_DreamTeam/static/css/main.100992ed.css.map",
+    "main.ed878ff2.js.map": "/CS422_DreamTeam/static/js/main.ed878ff2.js.map",
     "453.2e9a70c8.chunk.js.map": "/CS422_DreamTeam/static/js/453.2e9a70c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49e0ab57.css",
-    "static/js/main.56b8e5e6.js"
+    "static/css/main.100992ed.css",
+    "static/js/main.ed878ff2.js"
   ]
 }
