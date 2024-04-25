@@ -1,17 +1,10 @@
-import React from 'react'; 
+import React, {useState} from 'react'; 
 import '../styling/Tools.css'; 
 import profileIcon from '../images/profile_icon.png';
-
-/*
-import playButton from '../images/play_button.png';
-import fastFoward from '../images/fast_forward.png';
-import rewindButton from '../images/rewind-button.png';
-*/
 import BottomNav from '../components/BottomNav.js';
 import AlarmIcon from '../images/Alarm Icon.png';
 import MusicIcon from '../images/Music Icon.png';
 import ReadIcon from '../images/Reading Icon.png';
-import PlayerIcon from '../images/Player Icon.png';
 import MeditationIcon from '../images/Meditation Icon.png';
 import VideoIcon from '../images/Video Icon.png';
 import SleepSounds from '../Misc/SleepSounds.mp3';
@@ -20,6 +13,24 @@ import homeIcon from '../images/Home Icon.png';
 import { Link } from 'react-router-dom';
 
 const ToolsPage = () => {
+  const [selectedValue, setSelectedValue] = useState('');
+
+  const getVideoUrl = () => {
+    switch (selectedValue) {
+      case 'Odyssey':
+        return 'https://www.youtube.com/embed/NEw4yAHN2Hc';
+      case 'Coraline':
+        return 'https://www.youtube.com/embed/j00LOvsO8OU';
+      case 'Algernon':
+        return 'https:/www.youtube.com/embed/SHWted1RUmE';
+      default:
+        return '';
+    }
+  };
+
+  const handleDropdownChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
   return (
 
     <div className = "tools-container">   
@@ -70,7 +81,21 @@ const ToolsPage = () => {
       <div class="tools-box">
         <div className='tools-content'>
           <h2>Read Aloud</h2>
-          <img src={PlayerIcon} alt="Player" classname="player"/>
+          <select value={selectedValue} onChange={handleDropdownChange}>
+            <option value="">Select a Book</option>
+            <option value="Odyssey">The Odyssey</option>
+            <option value="Coraline">Coraline</option>
+            <option value="Algernon">Flowers for Algernon</option>
+          </select>
+        <iframe
+          width="40%"
+          height="auto"
+          src={getVideoUrl()}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         </div>
       <img src={ReadIcon} alt="ReadAloud" className="box-icon"/>
       </div>
