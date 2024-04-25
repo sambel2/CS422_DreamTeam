@@ -46,6 +46,7 @@ const SignUpPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setBirthdateError(''); // reset birthdate error on each submission attempt
+        setError('');
         // check for specific req here
         const age = calculateAge(formData.birthdate);
         if (age < 18) {
@@ -79,7 +80,11 @@ const SignUpPage = () => {
                 {/* Basic account information */}
                 <input name="username" type="text" placeholder="Username*" value={formData.username} onChange={handleInputChange} required />
                 <input name="password" type="password" placeholder="Password*" value={formData.password} onChange={handleInputChange} required />
-                <input name="birthdate" type="date" placeholder="Birthdate*" value={formData.birthdate} onChange={handleInputChange} required />
+                
+                <div style={{display: 'flex', alignItems: 'center'}}>
+                    <span style={{fontSize: '12px', marginRight: '5px'}}>Enter date of birth:</span>
+                    <input name="birthdate" type="date" value={formData.birthdate} onChange={handleInputChange} required />
+                </div>
                 {birthdateError && <div style={{ color: 'red' }}>{birthdateError}</div>}
 
                 <input name="email" type="email" placeholder="Email (Optional)" value={formData.email} onChange={handleInputChange} />
@@ -111,7 +116,8 @@ const SignUpPage = () => {
                     I agree to the <Link to="/user-agreement" style={{color: 'blue'}}>User Agreement</Link> and <Link to="/privacy-policy" style={{color: 'blue'}}>Privacy Policy</Link>
                 </label>
 
-                <button type="submit">Create Account</button>
+                {/* <button type="submit">Create Account</button> */}
+                <button type="submit" className="signup-button">Create Account</button>
                 {error && <div style={{ color: 'red'}}>{error}</div>}
             </form>
             <button onClick={handleGoBack} style={{  background: 'none', border: 'none', color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>
