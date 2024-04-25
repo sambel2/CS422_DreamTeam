@@ -6,7 +6,6 @@ import AlarmIcon from '../images/Alarm Icon.png';
 import MusicIcon from '../images/Music Icon.png';
 import ReadIcon from '../images/Reading Icon.png';
 import MeditationIcon from '../images/Meditation Icon.png';
-import VideoIcon from '../images/Video Icon.png';
 import SleepSounds from '../Misc/SleepSounds.mp3';
 import homeIcon from '../images/Home Icon.png';
 
@@ -88,7 +87,7 @@ const ToolsPage = () => {
             <option value="Algernon">Flowers for Algernon</option>
           </select>
         <iframe
-          width="40%"
+          max-width="200px"
           height="auto"
           src={getVideoUrl()}
           title="YouTube video player"
@@ -104,7 +103,7 @@ const ToolsPage = () => {
       <div className='tools-content'>
         <h2>Meditation & Breathing</h2>
         <iframe
-          width="40%"
+          max-width="200px"
           height="auto"
           src= 'https://www.youtube.com/embed/U9YKY7fdwyg'
           title="YouTube video player"

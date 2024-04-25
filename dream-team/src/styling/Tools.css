@@ -50,7 +50,7 @@
 }
 
 .tools-box select {
-    width: 20%; 
+    max-width: 430px;
     height: 50px; 
     font-size: 16px;
     padding: 5px 10px; 
