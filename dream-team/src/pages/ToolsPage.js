@@ -6,7 +6,6 @@ import AlarmIcon from '../images/Alarm Icon.png';
 import MusicIcon from '../images/Music Icon.png';
 import ReadIcon from '../images/Reading Icon.png';
 import MeditationIcon from '../images/Meditation Icon.png';
-import VideoIcon from '../images/Video Icon.png';
 import SleepSounds from '../Misc/SleepSounds.mp3';
 import homeIcon from '../images/Home Icon.png';
 
